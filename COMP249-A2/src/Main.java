@@ -4,17 +4,15 @@ import java.util.Scanner;
 public class Main {
 
     //declare String of file names for files used in multiple parts
-    static String[] genreCSV = {"Cartoon_Comics.csv","Hobbies_Collectibles.csv","Movies_TV_Books.csv","Music_Radio_Books.csv","Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv","Sports_Books_Memorabilia.csv","Trains_Planes_Automobiles.csv","syntax_error_file.txt"};
-
-    public static void main(String[] args) {
-        do_part1();
+    private static final String[] genreCSV = {"Cartoon_Comics.csv","Hobbies_Collectibles.csv","Movies_TV_Books.csv","Music_Radio_Books.csv","Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv","Sports_Books_Memorabilia.csv","Trains_Planes_Automobiles.csv","syntax_error_file.txt"};
+    public static void main(String[] args) {do_part1();
     }
     public static void do_part1() {
         //declare scanner object outside the try block so that object persists
         //declaring the file name in a String for simplicity's sake
 
         Scanner in = null;
-        String part1F1 = "src/part1_input_file_names.txt";
+        String part1F1 = "COMP249-A2/src/part1_input_file_names.txt";
         File file = new File(part1F1);
 
         //wrap scanner object declaration in a try block to catch FileNotFound exceptions
@@ -22,6 +20,7 @@ public class Main {
             in = new Scanner(file);
         }
         catch(FileNotFoundException e) {
+            System.out.println(e.getMessage());
             System.out.println("Problem opening file.");
             System.exit(0);
         }
@@ -43,7 +42,7 @@ public class Main {
         PrintWriter[] outputWriter = new PrintWriter[genreCSV.length];
         try {
             for (int i = 0; i < genreCSV.length; i++) {
-                outputWriter[i] = new PrintWriter(new FileOutputStream(genreCSV[i]));
+                outputWriter[i] = new PrintWriter(new FileOutputStream("COMP249-A2/src/part1_output_files/" + genreCSV[i]));
             }
         }
         catch(FileNotFoundException e) {
@@ -52,53 +51,119 @@ public class Main {
 
         //outer for loop used for processing all the books[year].csv files
         for(int i = 0; i < fileCount; i++) {
-            file = new File("src/" + files[i]);
+            file = new File("COMP249-A2/src/" + files[i]);
             try {
                 if(!file.exists()) {
-                    throw new IOException();
+                    throw new FileNotFoundException("File: " + files[i] + " does not exist. \nMoving on to the next file...");
                 }
                 in = new Scanner(file);
             }
-            catch(IOException e) {
-                System.out.println("File: " + files[i] + " does not exist. \nMoving on to the next file...");
+            catch(FileNotFoundException e) {
+                System.out.println(e.getMessage());
                 continue;
             }
             //while loop for reading the lines of each input file
             while(in.hasNextLine()) {
                 String line = in.nextLine();
-                String[] fields = line.split(",");
+                System.out.println(line); //Testing to check if code works
+                String[] fields = null;
+                //Checks if line starts with " and splits accordingly
+                if(line.charAt(0) == '\"') {
+                    String s = line.substring(1, line.indexOf("\"", 1)); //the first field
+                    String[] s2 = line.substring((line.indexOf("\"", 1))).split(","); //the other fields
+                    fields = new String[s2.length];
+                    fields[0] = s;
 
-                //code for fixing the array of field when there are quotes in the string
-                if(line.charAt(0) == '"') {
-                    for(int j = 0; j < fields.length; j++) {
-                        //condition that identifies the index of the array where the closing quotes are found (end of the quoted section)
-                        if((fields[j].charAt(fields[j].length() - 1) == '"')) {
-                            //update the array and reassebmle the quoted section: copy the original array into a temp variable
-                            String[] temp = fields;
+                    //sort each field from s2 into fields
+                    for (int j = 1; j < s2.length; j++){
+                        fields[j] = s2[j];
+                    }
 
-                            //update the size of the array of fields to the length it should be if the commas in the quoted section did not split it further
-                            fields = new String[temp.length - j];
-
-                            //initialize the first string
-                            fields[0] = "";
-
-                            //looping through each string in the original array
-                            for(int k = 0; k < temp.length; k++) {
-                                //identifying the original strings that are part of the quoted section (the ones that belong together)
-                                if(k <= j) {
-                                    //add the string that belongs together (quoted section) to the first index of the new fields array
-                                    fields[0] += temp[k];
-                                }
-                                else {
-                                    //place the rest of the strings where they should be in the new array
-                                    fields[k - j] = temp[k];
-                                }
-                            }
-                            break;
+                    //checks if number of fields is greater than 6 and if yes throws exception
+                    if (fields.length > 6){
+                        try {
+                            throw new TooManyFieldsException("Record: " + line);
+                        }
+                        catch (TooManyFieldsException e){
+                            outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
+                            continue;
+                        }
+                    }
+                    //checks if number of fields is less than 6 and if yes throws exception
+                    else if (fields.length < 6){
+                        try {
+                            throw new TooFewFieldsException("Record: " + line);
+                        }
+                        catch (TooFewFieldsException e){
+                            outputWriter[8].println(e.getMessage());
+                            continue;
                         }
                     }
                 }
+
+                else {
+                    //split the line nornally if does not start with "
+                    fields = line.split(",");
+
+                    //checks if number of fields is greater than 6 and if yes throws exception
+                    if (fields.length > 6){
+                        try {
+                            throw new TooManyFieldsException("Record: " + line);
+                        }
+                        catch (TooManyFieldsException e){
+                            outputWriter[8].println(e.getMessage());
+                            continue;
+                        }
+                    }
+
+                    //checks if number of fields is less than 6 and if yes throws exception
+                    else if (fields.length < 6){
+                        try {
+                            throw new TooFewFieldsException("Record: " + line);
+                        }
+                        catch (TooFewFieldsException e){
+                            outputWriter[8].println(e.getMessage());
+                            continue;
+                        }
+                    }
+
+                }
+                //Checks the genre of every line and outputs it to the appropriate file
+                String genre = fields[4];
+                if (genre.equals("CCB")){
+                    outputWriter[0].println(line);
+                }
+                else if (genre.equals("HCB")){
+                    outputWriter[1].println(line);
+                }
+                else if (genre.equals("MTV")){
+                    outputWriter[2].println(line);
+                }
+                else if (genre.equals("MRB")){
+                    outputWriter[3].println(line);
+                }
+                else if (genre.equals("NEB")){
+                    outputWriter[4].println(line);
+                }
+                else if (genre.equals("OTR")){
+                    outputWriter[5].println(line);
+                }
+                else if (genre.equals("SSM")){
+                    outputWriter[6].println(line);
+                }
+                else if (genre.equals("TPA")){
+                    outputWriter[7].println(line);
+                }
+                //incorrect genre? where send? part 2 maybe
             }
         }
+        //close outputwriter when done using it (this might need to be moved up at some point)
+        for (int i = 0; i < genreCSV.length; i++){
+            outputWriter[i].close();
+        }
+        //TODO: Part 1
+        //Need to create a new file and output every CSV file to it
+        //Create variables that hold the amt of books in each CSV file
+        //Finish up sytax error file output
     }
 }
