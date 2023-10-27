@@ -5,7 +5,8 @@ public class Main {
 
     //declare String of file names for files used in multiple parts
     private static final String[] genreCSV = {"Cartoon_Comics.csv","Hobbies_Collectibles.csv","Movies_TV_Books.csv","Music_Radio_Books.csv","Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv","Sports_Books_Memorabilia.csv","Trains_Planes_Automobiles.csv","syntax_error_file.txt"};
-    public static void main(String[] args) {do_part1();
+    public static void main(String[] args) {
+        do_part1();
     }
     public static void do_part1() {
         //declare scanner object outside the try block so that object persists
@@ -49,6 +50,8 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+        int[] bookCount = new int[genreCSV.length]; //to keep track of the number of entries in each CSV file
+
         //outer for loop used for processing all the books[year].csv files
         for(int i = 0; i < fileCount; i++) {
             file = new File("COMP249-A2/src/" + files[i]);
@@ -75,14 +78,14 @@ public class Main {
                     fields[0] = s;
 
                     //sort each field from s2 into fields
-                    for (int j = 1; j < s2.length; j++){
+                    for (int j = 1; j < s2.length; j++) {
                         fields[j] = s2[j];
                     }
 
                     //checks if number of fields is greater than 6 and if yes throws exception
-                    if (fields.length > 6){
+                    if (fields.length > 6) {
                         try {
-                            throw new TooManyFieldsException("Record: " + line);
+                            throw new TooManyFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\n");
                         }
                         catch (TooManyFieldsException e){
                             outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
@@ -92,7 +95,7 @@ public class Main {
                     //checks if number of fields is less than 6 and if yes throws exception
                     else if (fields.length < 6){
                         try {
-                            throw new TooFewFieldsException("Record: " + line);
+                            throw new TooFewFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\n");
                         }
                         catch (TooFewFieldsException e){
                             outputWriter[8].println(e.getMessage());
@@ -102,13 +105,13 @@ public class Main {
                 }
 
                 else {
-                    //split the line nornally if does not start with "
+                    //split the line normally if does not start with "
                     fields = line.split(",");
 
                     //checks if number of fields is greater than 6 and if yes throws exception
                     if (fields.length > 6){
                         try {
-                            throw new TooManyFieldsException("Record: " + line);
+                            throw new TooManyFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\n");
                         }
                         catch (TooManyFieldsException e){
                             outputWriter[8].println(e.getMessage());
@@ -119,7 +122,7 @@ public class Main {
                     //checks if number of fields is less than 6 and if yes throws exception
                     else if (fields.length < 6){
                         try {
-                            throw new TooFewFieldsException("Record: " + line);
+                            throw new TooFewFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\n");
                         }
                         catch (TooFewFieldsException e){
                             outputWriter[8].println(e.getMessage());
@@ -128,42 +131,57 @@ public class Main {
                     }
 
                 }
-                //Checks the genre of every line and outputs it to the appropriate file
+                //Checks the genre of every line and outputs it to the appropriate file, then increments the bookCount for the appropriate CSV file by 1
                 String genre = fields[4];
                 if (genre.equals("CCB")){
                     outputWriter[0].println(line);
+                    bookCount[0]++;
                 }
                 else if (genre.equals("HCB")){
                     outputWriter[1].println(line);
+                    bookCount[1]++;
                 }
                 else if (genre.equals("MTV")){
                     outputWriter[2].println(line);
+                    bookCount[2]++;
                 }
                 else if (genre.equals("MRB")){
                     outputWriter[3].println(line);
+                    bookCount[3]++;
                 }
                 else if (genre.equals("NEB")){
                     outputWriter[4].println(line);
+                    bookCount[4]++;
                 }
                 else if (genre.equals("OTR")){
                     outputWriter[5].println(line);
+                    bookCount[5]++;
                 }
                 else if (genre.equals("SSM")){
                     outputWriter[6].println(line);
+                    bookCount[6]++;
                 }
                 else if (genre.equals("TPA")){
                     outputWriter[7].println(line);
+                    bookCount[7]++;
                 }
-                //incorrect genre? where send? part 2 maybe
+                else {
+                    outputWriter[8].println("Error: invalid genre \n====================\n" + line + "\n");
+                    bookCount[8]++;
+                    //this checks for both invalid or missing genre, need another method to check for missing genre
+                }
             }
         }
-        //close outputwriter when done using it (this might need to be moved up at some point)
+        System.out.println("\n====================\n");
+        //display the number of books in each CSV file then close outputWriter when done using it (this might need to be moved up at some point)
         for (int i = 0; i < genreCSV.length; i++){
+            System.out.println("There are " + bookCount[i] + " books in the file " + genreCSV[i]);
             outputWriter[i].close();
         }
+
         //TODO: Part 1
         //Need to create a new file and output every CSV file to it
         //Create variables that hold the amt of books in each CSV file
-        //Finish up sytax error file output
+        //Finish up syntax error file output
     }
 }

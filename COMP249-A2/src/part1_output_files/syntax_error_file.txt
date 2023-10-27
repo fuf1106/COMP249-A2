@@ -1,96 +1,484 @@
-Record: "First Hollywood Sound Shorts 1926-1931, The",,,44.95,9780786443192,MTV,2005
-Record: Supervillian Book: The Evil Side of Comics and Hollywood,Gina Misiroglu & Michael Eury,24.95,1578591783,CCB,
-Record: Who's Who In Animated Cartoons: An International Guide to Film and Television's Award-Winning and Legendary Animators,Jeff Lenburg,15.95,155783671X,CCB,
-Record: "Amos, Tori - Images & Insights (Rare Photo Collection And Quotations)",Michael Friel & Melody Mcdaniel & Cindy Palmano & Rankin,1,0825615674,MRB,
-Record: "Atkins, Chet - Me And My Guitars",Chet Atkins & Michael Cochran,19.95,0634055658,MRB,
-Record: "Bacharach, Burt - Song By Song",Serene Dominic,11.95,0825672805,MRB,
-Record: Bay City Rollers - Bye Bye Baby: My Tragic Love Affair With The Bay City Rollers,Caroline Sullivan,2.95,1582340552,MRB,
-Record: Beastie Boys - The Beastie Boys Companion - Two Decades of Commentary,John Rocco,1,0028653343,MRB,
-Record: Beatles - Diary: An Intimate Day By Day History (Pocket Edition),Barry Miles,8.95,0711991960,MRB,
-Record: Beatles - Dream Is Over,By Keith Badman,3.95,0711988021,MRB,
-Record: Billboard's Top R&B And Hip-Hop Singles (1942 To 2004),,39.95,0898201608,MRB,
-Record: Black Sabbath - The Ozzy Years (Embossed Cover And Rare Photo Collection),Robert V. Conte & C.J. Henderson,1.99,1890313998,MRB,
-Record: Blues - From Robert Johnson To Robert Clay,Tony Russell,5.95,0028648862,MRB,
-Record: "Boone, Pat - April Love: The Early Days of Rock 'N' Roll - The Authorized Biography",Paul Davis,4.95,,MRB,
-Record: British Invasion - How The Beatles And Other UK Bands Conquered America,Bill Harry,6.95,,MRB,
-Record: "Brown, Ruth - Miss Rhythm: The Autobiography of Ruth Brown, Rhythm & Blues Legend",Ruth Brown & Andrew Yule,9.95,0306808889,MRB,
-Record: "Buffet, Jimmy - Jimmy Buffet Scrapbook",Mark Humphrey & Harris Lewine,3.95,0806514612,MRB,
-Record: "Carmichael, Hoagy - Stardust Melody: The Life And Music of Hoagy Carmichael",Richard M. Sudhalter,5.95,0195168984,MRB,
-Record: "Cash, Johnny - Man In White: A Novel About The Apostle Paul",Johnny Cash,19.95,159554237X,MRB,
-Record: "Cash, Johnny - Ring of Fire: Tribute (with Quotes From Johnny's Family, Friends And Colleagues And A Bonus CD Single)",Brian Mansfield,3.95,1401601375,MRB,
-Record: "Cash, Johnny - The Life of An American Icon",Stephen Miller,15.95,0711996261,MRB,
-Record: Cher - The First Time,Cher as told to Jeff Coplon,4.95,0316848441,MRB,
-Record: Chicago - Feelin' Stronger Every Day,Ben Joseph,1.99,1550822454,MRB,
-Record: Chieftains - Authorized Biography,John Glatt,5.95,0306809222,MRB,
-Record: "Cole, Natalie - Angel On My Shoulder: An Autobiography",Natalie Cole & Digby Diehl,4.95,0446527467,MRB,
-Record: Complete Book of Doo Wop,Dr. Anthony J. Gribin & Dr. Matthew M. Schiff,24.95,0977379841,MRB,
-Record: Cranberries,Michael Heatley,1,1578990203,MRB,
-Record: "Darin, Bobby - Me And Bobby D.: A Memoir",Steve Karmen,16.95,0634048767,MRB,
-Record: "Davies, Ray - X-Ray",Ray Davies,5.95,0879516119,MRB,
-Record: Deep Purple - The Deep Purple Story: Smoke On The Water,Dave Thompson,12.95,,MRB,
-Record: "Dion, Celine - Falling Into You",Barry Grills,1.49,155082189X,MRB,
-Record: "Dylan, Bob - Performing Artist, Volume 2 - The Middle Years: 1974-1986",Paul Williams,1.99,0711935556,MRB,
-Record: "Dylan, Bob - Performing Artist, Volume 3 - Mind Out of Time: 1986-1990 & Beyond",Paul Williams,15.98,1844492818,MRB,
-Record: "Freed, Alan Story - The Early Years of Rock & Roll",John A. Jackson,6.95,0977379809,MRB,
-Record: Garage Rock And Its Roots - Musical Rebels And The Drive For Individuality,Eric James Abbey & Michelangelo Capua,28.95,0786425644,MRB,
-Record: "Gillespie, Dizzy - Groovin' High: The Life of Dizzy Gillespie",Alyn Shipton,6.95,0195144104,MRB,
-Record: Girl Groups: Fabulous Females That Rocked The World,John Clemente,7.95,0873418166,MRB,
-Record: Grateful Dead - Living With The Dead: Twenty Years On The Bus With Garcia And The Grateful Dead,Rock Scully & David Dalton,3.95,0316777129,MRB,
-Record: Grateful Dead - Not Fade Away: The Online World Remembers Jerry Garcia,,1.95,1560251255,MRB,
-Record: Great Rock Drummers of the Sixties (Revised),Bob Cianci,16.95,0634099256,MRB,
-Record: "Hampton, Lionel - Hamp",Lionel Hampton & James Haskins,4.99,1567430198,MRB,
-Record: "Hendrix, Jimi - Voodoo Child: The Illustrated Legend of Jimi Hendrix (with CD)",Illustrated By Bill Sienkiewicz & Created & Produed By Martin I. Green,8.95,0670867896,MRB,
-Record: Hot Country Stars,Michael McCall & Janet Williams,1.99,1561737291,MRB,
-Record: "Jones, George - Why Baby Why",Jim Brown,1.99,1550822438,MRB,
-Record: Madonna - Complete Guide To Her Music,Rikky Rooksby,2.95,0711998833,MRB,
-Record: Madonna - In Her Own Words,Mick St Michael,5.95,0711977348,MRB,
-Record: Mamas & The Papas - California Dreamin',Doug Hall,1.99,1880522160,MRB,
-Record: "Manilow, Barry - Biography",Patricia Butler,3.95,0711991979,MRB,
-Record: "Marley, Bob - Complete Guide To His Music",Ian Mccann & Harry Hawke,2.95,0711998841,MRB,
-Record: "McCartney, Paul - I Saw Him Standing There",Jorie B. Gracen,12.95,0823083691,MRB,
-Record: "McCartney, Paul - Now & Then",Tony Barrow & Robin Bextor,19.95,0634069195,MRB,
-Record: Monkees - Collectibles Price Guide,Marty Eck,13.95,0930625188,MRB,
-Record: "Music Hound - Soundtracks: The Essential Album Guide To Film, Television, And Stage Music",Didieer C. Deutsh,4.95,,MRB,
-Record: "Music, Money, And Success - The Insider's Guide To Making Money In The Music Industry (3rd Ed.)",Todd Brabec & Jeffrey Brabec,2.5,0825672821,MRB,
-Record: Nirvana - Complete Guide To Their Music,James Hector,2.95,0711998876,MRB,
-Record: "Nirvana And The Grunge Revolution - Interviews (Also Pearl Jam, Alice In Chains, Soundgarden)",Guitar World Magazine,10.95,079359006X,MRB,
-Record: Nirvana Tribute - Nirvana / Hole,,1,,MRB,
-Record: Pink Floyd - Interviews,Guitar World Magazine,9.95,0634032860,MRB,
-Record: "Pop, Iggy - Neighbourhood Threat: On Tour With Iggy Pop",Alvin Gibbs,4.95,1899598170,MRB,
-Record: "Presley, Elvis - Elvis Film Encyclopedia: An Impartial Guide To The Films of Elvis",Eric Braun,6.99,0879518146,MRB,
-Record: "Presley, Elvis - Elvis Inc.: The Fall And Rise of The Presley Empire",Sean O'Neal,2.95,076151127X,MRB,
-Record: "Presley, Elvis - Sergeant Presley: Our Untold Story of Elvis' Missing Years",Rex & Elisabeth Mansfield & Marshall & Zoe Terrill,5.95,1550225553,MRB,
-Record: Queen - The Art of Queen - The Making of The Eye,,1.99,0765191261,MRB,
-Record: R.E.M. - The Rolling Stone Files,,2.95,0786880546,MRB,
-Record: Radiohead - Green Plastic Wateringcan,William Stone,1,188689454X,MRB,
-Record: "Redding, Otis - Otis!: Otis Redding Story",Scott Freeman,5.95,0312302975,MRB,
-Record: "Rich, Buddy - Traps: The Drum Wonder - The Life of Buddy Rich",Mel Torme,10.5,1888408022,MRB,
-Record: Rock 'N' Roll Years 1960-2000 - The Photographer's Cut,,2.99,0953747913,MRB,
-Record: "Sinatra, Frank - My Father's Daughter: A Memoir",Tina Sinatra (With Jeff Coplon),5.95,0684870762,MRB,
-Record: "Sinatra, Frank - Sessions With Sinatra: Frank Sinatra And The Art of Recording",Charles Granata,13.95,1556523564,MRB,
-Record: Soulful Divas,David Nathan,11.5,0823084302,MRB,
-Record: "Spector, Phil - Out of His Head",Richard Williams,4.95,0711998647,MRB,
-Record: "Springsteen, Bruce - Talking: In His Own Words",John W. Duffy,8.95,1844494039,MRB,
-Record: Top 500 Heavy Metal Albums of All Time,Martin Popoff,14.95,,MRB,
-Record: Turn On Your Mind - Four Decades of Great Psychedelic Rock,Jim Derogatis,12.95,0634055488,MRB,
-Record: U2 - Complete Guide To Their Music,Bill Graham & Caroline Van Der Oosten De Boer,2.95,0711998868,MRB,
-Record: "Vaughan, Stevie Ray - In His Own Words",Guitar World Magazine,10.5,0793580803,MRB,
-Record: Yes - Close To The Edge: The Story of Yes,Chris Welch,3.95,0711995095,MRB,
-Record: "Brando, Marlon - A Biography",Patricia Bosworth,4.95,,MTV,
-Record: "Brynner, Yul - A Biography",Michelangelo Capua,30.95,0786424613,MTV,
-Record: "Ferrara, Abel - The King of New York",Nick Johnstone,2.95,071197652X,MTV,
-Record: Monster Bash Magazine (Issue #1),,7,,MTV,
-Record: Monster Bash Magazine (Issue #2),,7,,MTV,
-Record: Monster Bash Magazine (Issue #3),,7,,MTV,
-Record: Monster Bash Magazine (Issue #4),,7,,MTV,
-Record: Monster Bash Magazine (Issue #5),,7,,MTV,
-Record: "Presley, Elvis - Elvis Cinema and Popular Culture",Douglas Brode,30.95,0786425261,MTV,
-Record: "Raimi, Sam - Unseen Force: The Films of Sam Raimi",John Kenneth Muir,14.95,1557836078,MTV,
-Record: "Robinson, Bill - Mr. Bojangles",Jim Haskins & N.R. Mitgang,7.95,,MTV,
-Record: Superman - Art of Superman Returns,Daniel Wallace,29.95,0811853446,MTV,
-Record: "Tarantino, Quentin - The Cinema of Cool",Jeff Dawson,10.95,1557832277,MTV,
-Record: Tarzan - My Father,Johnny Weissmuller Jr. & William Reed & W. Craig Reed,19.95,1550225227,MTV,
-Record: Wizardry of Oz - The Artistry And Magic of The 1939 Mgm Classic (Revised & Expanded Edition),Jay Scarfone & William Stillman,13.95,1557836248,MTV,
-Record: "Young, Alan - There's No Business Like Show Business... Was",Alan Young,12.95,1593930534,MTV,
-Record: Pop-Up Book of Nightmares,Gary Greenberg,4.95,031228263X,NEB,
-Record: Racing - Legends of Stock Car Racing,Dr. John Craft,5.95,0760301441,SSM,
+Error: invalid genre 
+====================
+Zombie Movie Encyclopedia,Peter Dendle,30.95,9780786408597,,2000
+
+Error: invalid genre 
+====================
+"Great Radio Heroes, Revised Edition",Jim Harmon,35.95,9780786408504,MBR,2001
+
+Error: invalid genre 
+====================
+"Gravesites of Southern Musicians - A Guide To Over 300 Jazz, Blues, Country And Rock Performers' Burial Places",Edward Amos,35.95,9780786412709,MBR,2002
+
+Error: invalid genre 
+====================
+Wagner and Suicide,John Louis DiGaetani,39.95,9780786414772,BRM,2003
+
+Error: invalid genre 
+====================
+Up From The Vault - Rare Thrillers of The 1920S And 1930S,John T. Soister,49.5,9780786417452,CTV,2004
+
+Error: invalid genre 
+====================
+Radio's Captain Midnight - The Wartime Biography,Stephen A. Kallis Jr.,26.96,9780786421763,BRM,2004
+
+Error: invalid genre 
+====================
+Hanna-Barbera Cartoons,Michael Mallory,18.95,0883631083,CBB,2005
+
+Error: invalid genre 
+====================
+"Wonder of American Toys, 1920-1950",Charles Dee Sharp,14.95,1888054700,HBC,2005
+
+Error: invalid genre 
+====================
+Billboard Book of Number One Adult Contemporary Hits,Wesley Hyatt,5.95,,BBM,2005
+
+Error: invalid genre 
+====================
+"Bonham, John - A Thunder of Drums",Chris Welch & Geoff Nicholls,12.95,0879306580,MMR,2005
+
+Error: invalid genre 
+====================
+It's Only Rock And Roll: Rock And Roll Currents In Contemporary Art,David S. Rubin,3.95,3791316273,RBM,2005
+
+Syntax error in file: books2005.csv.txt
+====================
+"First Hollywood Sound Shorts 1926-1931, The",,,44.95,9780786443192,MTV,2005
+
+Error: invalid genre 
+====================
+"Baseball - All Bat, No Glove: A History of the Designated Hitter",G. Richard McKelvey,24.95,078641944X,SSN,2005
+
+Error: invalid genre 
+====================
+Baseball - Baseball Players' Best Seasons: Team by Team Rankings,Michael S. Jones,39.95,0786410868,SSN,2005
+
+Error: invalid genre 
+====================
+Baseball - Battle of Base-Ball,C.H. Claudy,30.95,9780786420209,SSN,2005
+
+Error: invalid genre 
+====================
+"Baseball - Big And Little Poison: Paul and Lloyd Waner, Baseball Brothers",Clifton Blue Parker,24.95,0786414006,SSN,2005
+
+Error: invalid genre 
+====================
+"Presley, Elvis - Rebel Years",Lester Bangs,4.95,0393316254,RBM,2006
+
+Error: invalid genre 
+====================
+Mad Magazine - Spy Vs. Spy: The Complete Casebook,Antonio Prohias,15.95,0823050211,BCC,2007
+
+Error: invalid genre 
+====================
+"Goodman, Steve - Facing The Music",Clay Eals,23.95,1550227327,ABC,2007
+
+Error: invalid genre 
+====================
+"Thorgeson, Storm - Taken By Storm: The Album Art of Storm Thorgeson",Storm Thorgeson & Peter Curzon,19.95,1846096677,DEF,2007
+
+Error: invalid genre 
+====================
+Billboard - Hot Dance/Disco 1974-2003,Joel Whitburn,37.95,089820156X,RFG,2008
+
+Error: invalid genre 
+====================
+"Pop Surf Culture - Music, Design, Film And Fashion From The Bohemian Surf Boom",Brian Chidester & Dominic Priore,29.95,1595800352,QAS,2008
+
+Error: invalid genre 
+====================
+Manga Martial Arts,David Okum,16.95,1600610293,CBC,2009
+
+Error: invalid genre 
+====================
+Standard Catalog Of American Flyer Trains,David Doyle,27.95,0896895157,BHC,2009
+
+Error: invalid genre 
+====================
+Billboard - Hot Country Songs 1944-2008,Joel Whitburn,49.95,0898201772,WWF,2009
+
+Error: invalid genre 
+====================
+Goldmine Record Album Price Guide (6th Edition) [DVD-ROM Version],Tim Neely,16.99,1440203776,XYZ,2009
+
+Syntax error in file: books2010.csv.txt
+====================
+Supervillian Book: The Evil Side of Comics and Hollywood,Gina Misiroglu & Michael Eury,24.95,1578591783,CCB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Who's Who In Animated Cartoons: An International Guide to Film and Television's Award-Winning and Legendary Animators,Jeff Lenburg,15.95,155783671X,CCB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Amos, Tori - Images & Insights (Rare Photo Collection And Quotations)",Michael Friel & Melody Mcdaniel & Cindy Palmano & Rankin,1,0825615674,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Atkins, Chet - Me And My Guitars",Chet Atkins & Michael Cochran,19.95,0634055658,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Bacharach, Burt - Song By Song",Serene Dominic,11.95,0825672805,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Bay City Rollers - Bye Bye Baby: My Tragic Love Affair With The Bay City Rollers,Caroline Sullivan,2.95,1582340552,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Beastie Boys - The Beastie Boys Companion - Two Decades of Commentary,John Rocco,1,0028653343,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Beatles - Diary: An Intimate Day By Day History (Pocket Edition),Barry Miles,8.95,0711991960,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Beatles - Dream Is Over,By Keith Badman,3.95,0711988021,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Billboard's Top R&B And Hip-Hop Singles (1942 To 2004),,39.95,0898201608,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Black Sabbath - The Ozzy Years (Embossed Cover And Rare Photo Collection),Robert V. Conte & C.J. Henderson,1.99,1890313998,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Blues - From Robert Johnson To Robert Clay,Tony Russell,5.95,0028648862,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Boone, Pat - April Love: The Early Days of Rock 'N' Roll - The Authorized Biography",Paul Davis,4.95,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+British Invasion - How The Beatles And Other UK Bands Conquered America,Bill Harry,6.95,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Brown, Ruth - Miss Rhythm: The Autobiography of Ruth Brown, Rhythm & Blues Legend",Ruth Brown & Andrew Yule,9.95,0306808889,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Buffet, Jimmy - Jimmy Buffet Scrapbook",Mark Humphrey & Harris Lewine,3.95,0806514612,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Carmichael, Hoagy - Stardust Melody: The Life And Music of Hoagy Carmichael",Richard M. Sudhalter,5.95,0195168984,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Cash, Johnny - Man In White: A Novel About The Apostle Paul",Johnny Cash,19.95,159554237X,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Cash, Johnny - Ring of Fire: Tribute (with Quotes From Johnny's Family, Friends And Colleagues And A Bonus CD Single)",Brian Mansfield,3.95,1401601375,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Cash, Johnny - The Life of An American Icon",Stephen Miller,15.95,0711996261,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Cher - The First Time,Cher as told to Jeff Coplon,4.95,0316848441,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Chicago - Feelin' Stronger Every Day,Ben Joseph,1.99,1550822454,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Chieftains - Authorized Biography,John Glatt,5.95,0306809222,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Cole, Natalie - Angel On My Shoulder: An Autobiography",Natalie Cole & Digby Diehl,4.95,0446527467,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Complete Book of Doo Wop,Dr. Anthony J. Gribin & Dr. Matthew M. Schiff,24.95,0977379841,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Cranberries,Michael Heatley,1,1578990203,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Darin, Bobby - Me And Bobby D.: A Memoir",Steve Karmen,16.95,0634048767,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Davies, Ray - X-Ray",Ray Davies,5.95,0879516119,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Deep Purple - The Deep Purple Story: Smoke On The Water,Dave Thompson,12.95,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Dion, Celine - Falling Into You",Barry Grills,1.49,155082189X,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Dylan, Bob - Performing Artist, Volume 2 - The Middle Years: 1974-1986",Paul Williams,1.99,0711935556,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Dylan, Bob - Performing Artist, Volume 3 - Mind Out of Time: 1986-1990 & Beyond",Paul Williams,15.98,1844492818,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Freed, Alan Story - The Early Years of Rock & Roll",John A. Jackson,6.95,0977379809,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Garage Rock And Its Roots - Musical Rebels And The Drive For Individuality,Eric James Abbey & Michelangelo Capua,28.95,0786425644,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Gillespie, Dizzy - Groovin' High: The Life of Dizzy Gillespie",Alyn Shipton,6.95,0195144104,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Girl Groups: Fabulous Females That Rocked The World,John Clemente,7.95,0873418166,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Grateful Dead - Living With The Dead: Twenty Years On The Bus With Garcia And The Grateful Dead,Rock Scully & David Dalton,3.95,0316777129,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Grateful Dead - Not Fade Away: The Online World Remembers Jerry Garcia,,1.95,1560251255,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Great Rock Drummers of the Sixties (Revised),Bob Cianci,16.95,0634099256,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Hampton, Lionel - Hamp",Lionel Hampton & James Haskins,4.99,1567430198,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Hendrix, Jimi - Voodoo Child: The Illustrated Legend of Jimi Hendrix (with CD)",Illustrated By Bill Sienkiewicz & Created & Produed By Martin I. Green,8.95,0670867896,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Hot Country Stars,Michael McCall & Janet Williams,1.99,1561737291,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Jones, George - Why Baby Why",Jim Brown,1.99,1550822438,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Madonna - Complete Guide To Her Music,Rikky Rooksby,2.95,0711998833,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Madonna - In Her Own Words,Mick St Michael,5.95,0711977348,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Mamas & The Papas - California Dreamin',Doug Hall,1.99,1880522160,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Manilow, Barry - Biography",Patricia Butler,3.95,0711991979,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Marley, Bob - Complete Guide To His Music",Ian Mccann & Harry Hawke,2.95,0711998841,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"McCartney, Paul - I Saw Him Standing There",Jorie B. Gracen,12.95,0823083691,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"McCartney, Paul - Now & Then",Tony Barrow & Robin Bextor,19.95,0634069195,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monkees - Collectibles Price Guide,Marty Eck,13.95,0930625188,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Music Hound - Soundtracks: The Essential Album Guide To Film, Television, And Stage Music",Didieer C. Deutsh,4.95,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Music, Money, And Success - The Insider's Guide To Making Money In The Music Industry (3rd Ed.)",Todd Brabec & Jeffrey Brabec,2.5,0825672821,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Nirvana - Complete Guide To Their Music,James Hector,2.95,0711998876,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Nirvana And The Grunge Revolution - Interviews (Also Pearl Jam, Alice In Chains, Soundgarden)",Guitar World Magazine,10.95,079359006X,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Nirvana Tribute - Nirvana / Hole,,1,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Pink Floyd - Interviews,Guitar World Magazine,9.95,0634032860,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Pop, Iggy - Neighbourhood Threat: On Tour With Iggy Pop",Alvin Gibbs,4.95,1899598170,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Presley, Elvis - Elvis Film Encyclopedia: An Impartial Guide To The Films of Elvis",Eric Braun,6.99,0879518146,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Presley, Elvis - Elvis Inc.: The Fall And Rise of The Presley Empire",Sean O'Neal,2.95,076151127X,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Presley, Elvis - Sergeant Presley: Our Untold Story of Elvis' Missing Years",Rex & Elisabeth Mansfield & Marshall & Zoe Terrill,5.95,1550225553,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Queen - The Art of Queen - The Making of The Eye,,1.99,0765191261,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+R.E.M. - The Rolling Stone Files,,2.95,0786880546,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Radiohead - Green Plastic Wateringcan,William Stone,1,188689454X,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Redding, Otis - Otis!: Otis Redding Story",Scott Freeman,5.95,0312302975,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Rich, Buddy - Traps: The Drum Wonder - The Life of Buddy Rich",Mel Torme,10.5,1888408022,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Rock 'N' Roll Years 1960-2000 - The Photographer's Cut,,2.99,0953747913,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Sinatra, Frank - My Father's Daughter: A Memoir",Tina Sinatra (With Jeff Coplon),5.95,0684870762,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Sinatra, Frank - Sessions With Sinatra: Frank Sinatra And The Art of Recording",Charles Granata,13.95,1556523564,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Soulful Divas,David Nathan,11.5,0823084302,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Spector, Phil - Out of His Head",Richard Williams,4.95,0711998647,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Springsteen, Bruce - Talking: In His Own Words",John W. Duffy,8.95,1844494039,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Top 500 Heavy Metal Albums of All Time,Martin Popoff,14.95,,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Turn On Your Mind - Four Decades of Great Psychedelic Rock,Jim Derogatis,12.95,0634055488,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+U2 - Complete Guide To Their Music,Bill Graham & Caroline Van Der Oosten De Boer,2.95,0711998868,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Vaughan, Stevie Ray - In His Own Words",Guitar World Magazine,10.5,0793580803,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Yes - Close To The Edge: The Story of Yes,Chris Welch,3.95,0711995095,MRB,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Brando, Marlon - A Biography",Patricia Bosworth,4.95,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Brynner, Yul - A Biography",Michelangelo Capua,30.95,0786424613,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Ferrara, Abel - The King of New York",Nick Johnstone,2.95,071197652X,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monster Bash Magazine (Issue #1),,7,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monster Bash Magazine (Issue #2),,7,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monster Bash Magazine (Issue #3),,7,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monster Bash Magazine (Issue #4),,7,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Monster Bash Magazine (Issue #5),,7,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Presley, Elvis - Elvis Cinema and Popular Culture",Douglas Brode,30.95,0786425261,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Raimi, Sam - Unseen Force: The Films of Sam Raimi",John Kenneth Muir,14.95,1557836078,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Robinson, Bill - Mr. Bojangles",Jim Haskins & N.R. Mitgang,7.95,,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Superman - Art of Superman Returns,Daniel Wallace,29.95,0811853446,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Tarantino, Quentin - The Cinema of Cool",Jeff Dawson,10.95,1557832277,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Tarzan - My Father,Johnny Weissmuller Jr. & William Reed & W. Craig Reed,19.95,1550225227,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Wizardry of Oz - The Artistry And Magic of The 1939 Mgm Classic (Revised & Expanded Edition),Jay Scarfone & William Stillman,13.95,1557836248,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+"Young, Alan - There's No Business Like Show Business... Was",Alan Young,12.95,1593930534,MTV,
+
+Syntax error in file: books2010.csv.txt
+====================
+Pop-Up Book of Nightmares,Gary Greenberg,4.95,031228263X,NEB,
+
+Syntax error in file: books2010.csv.txt
+====================
+Racing - Legends of Stock Car Racing,Dr. John Craft,5.95,0760301441,SSM,
+
