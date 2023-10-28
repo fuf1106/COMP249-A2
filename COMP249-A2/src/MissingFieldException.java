@@ -3,6 +3,7 @@ public class MissingFieldException extends Exception{
         super();
     }
     public MissingFieldException(String message) {
+
         super(message);
     }
 }
