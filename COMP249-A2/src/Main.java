@@ -72,17 +72,51 @@ public class Main {
                 String line = in.nextLine();
                 System.out.println(line); //Testing to check if code works
                 String[] fields = null;
+                String[] temp = null;
                 //Checks if line starts with " and splits accordingly
-                if(line.charAt(0) == '\"') {
-                    String s = line.substring(1, line.indexOf("\"", 1)); //the first field
-                                    String[] s2 = line.substring((line.indexOf("\"", 1))).split(","); //the other fields
-                    fields = new String[s2.length];
-                    fields[0] = s;
+                if (line.charAt(0) == '\"') {
+                    String title_field = "\"" + line.substring(1, line.indexOf("\"", 1)) + "\""; //the first field
+                    String other_fields = line.substring(title_field.length() + 1 );
+                    System.out.println(other_fields);
+                    temp = other_fields.split(",", -1);
+                    System.out.println(temp.length);
+                    fields = new String[6];
+                    fields[0] = title_field;
 
-                    //sort each field from s2 into fields
-                    for (int j = 1; j < s2.length; j++) {
-                        fields[j] = s2[j];
+                    //checks if number of fields is greater than 6 and if yes throws exception
+                    if (temp.length > 5) {
+                        try {
+                            throw new TooManyFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\nToo many fields\n");
+                        }
+                        catch (TooManyFieldsException e){
+                            outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
+                            continue;
+                        }
                     }
+                    //checks if number of fields is less than 6 and if yes throws exception
+                    else if (temp.length < 5){
+                        try {
+                            throw new TooFewFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\nToo few fields\n");
+                        }
+                        catch (TooFewFieldsException e){
+                            outputWriter[8].println(e.getMessage());
+                            continue;
+                        }
+                    }
+
+                    //sory each field into fields
+                    for (int j = 0; j < temp.length; j++){
+                        fields[j + 1] = temp[j];
+                    }
+
+                    for (int j = 0; j < fields.length; j++){
+                        System.out.println(fields[j]);
+                    }
+                    System.out.println("done");
+                }
+
+                else {
+                    fields = line.split(",", -1);
 
                     //checks if number of fields is greater than 6 and if yes throws exception
                     if (fields.length > 6) {
@@ -104,37 +138,8 @@ public class Main {
                             continue;
                         }
                     }
-
                 }
 
-                else {
-                    //split the line normally if does not start with "
-                    fields = line.split(",");
-
-                    //checks if number of fields is greater than 6 and if yes throws exception
-                    if (fields.length > 6){
-                        try {
-                            throw new TooManyFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "Too many fields\n");
-                        }
-                        catch (TooManyFieldsException e){
-                            outputWriter[8].println(e.getMessage());
-                            continue;
-                        }
-                    }
-
-                    //checks if number of fields is less than 6 and if yes throws exception
-                    else if (fields.length < 6){
-                        try {
-                            throw new TooFewFieldsException("Syntax error in file: " + files[i] + "\n====================\n" + line + "\nToo few fields\n");
-
-                        }
-                        catch (TooFewFieldsException e){
-                            outputWriter[8].println(e.getMessage());
-                            continue;
-                        }
-                    }
-
-                }
                 //Checks the genre of every line and outputs it to the appropriate file, then increments the bookCount for the appropriate CSV file by 1
                 //Checks for valid genre
                 String genre = fields[4];
@@ -182,6 +187,19 @@ public class Main {
                 fieldNames[3] = "isbn";
                 fieldNames[4] = "genre";
                 fieldNames[5] = "year";
+                System.out.println(fields.length);
+                System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH" + fields[5]);
+
+
+                //had to close and open the outputstream again because reasons
+                outputWriter[8].close();
+
+                try {
+                    outputWriter[8] = new PrintWriter(new FileOutputStream("COMP249-A2/src/part1_output_files/" + genreCSV[8], true));
+                }
+                catch(FileNotFoundException e) {
+                    System.out.println(e.getMessage());
+                }
 
                 //checks for missing fields
                 for (int j = 0; j < fields.length; j++) {
@@ -192,6 +210,7 @@ public class Main {
                     }
                     catch (MissingFieldException e){
                         outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
+                        System.out.println(e.getMessage());
                     }
                 }
             }

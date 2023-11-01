@@ -1,3 +1,8 @@
+Syntax error in file: books1997.csv.txt
+====================
+"Western Movies - A TV and Video Guide to 4,200 Genre Films",Michael R. Pitts,39.95,9780786404216,MTV,1997,
+Too many fields
+
 syntax error in file: books1998.csv.txt
 ====================
 Error: missing authors
@@ -7,6 +12,11 @@ syntax error in file: books2000.csv.txt
 ====================
 Error: missing authors
 Record: African American Jazz And Rap - Social And Philosophical Examinations of Black Expressive Behavior,,39.95,9780786408283,MRB,2000
+
+Syntax error in file: books2000.csv.txt
+====================
+Golden Images - 41 Essays On Silent Film Stars,Eve Golden,35.95,9780786408344,MTV,2000,
+Too many fields
 
 syntax error in file: books2000.csv.txt
 ====================
@@ -657,6 +667,11 @@ syntax error in file: books2007.csv.txt
 Error: missing authors
 Record: Celtic Music - Third Ear: The Essential Listening Companion,,5.95,9780879306236,MRB,2007
 
+Syntax error in file: books2007.csv.txt
+====================
+Classic Guitars Identification And Price Guide,Nick Freeth,16.99,0896895297,MRB,2007,
+Too many fields
+
 syntax error in file: books2007.csv.txt
 ====================
 Error: missing authors
@@ -676,6 +691,11 @@ syntax error in file: books2007.csv.txt
 Error: missing authors
 Record: "Morrison, Jim - Angels Dance And Angels Die",,14.95,0825673410,MRB,2007
 
+Syntax error in file: books2007.csv.txt
+====================
+"Morrison, Jim - Jim Morrison: Life, Death, Legend",Stephen Davis,4.95,159240099X,MRB,2007,
+Too many fields
+
 Error: invalid genre 
 ====================
 "Thorgeson, Storm - Taken By Storm: The Album Art of Storm Thorgeson",Storm Thorgeson & Peter Curzon,19.95,1846096677,DEF,2007
@@ -684,6 +704,11 @@ syntax error in file: books2007.csv.txt
 ====================
 Error: missing isbn
 Record: "Wilson, Brian - Smile",Domenic Priore,11.95,,MRB,2007
+
+Syntax error in file: books2007.csv.txt
+====================
+Escape! - How Animation Broke Into The Mainstream In The 1990s,G. Michael Dobbs,16.95,1593931107,MTV,2007,
+Too many fields
 
 syntax error in file: books2007.csv.txt
 ====================
@@ -1319,156 +1344,593 @@ syntax error in file: books2009.csv.txt
 Error: missing authors
 Record: Baseball - Baseball/Literature/Culture: Essays 2006/2007,,39.95,9780786436804,SSM,2009
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Supervillian Book: The Evil Side of Comics and Hollywood,Gina Misiroglu & Michael Eury,24.95,1578591783,CCB,
-Too few fields
+Error: missing year
+Record: Supervillian Book: The Evil Side of Comics and Hollywood,Gina Misiroglu & Michael Eury,24.95,1578591783,CCB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Who's Who In Animated Cartoons: An International Guide to Film and Television's Award-Winning and Legendary Animators,Jeff Lenburg,15.95,155783671X,CCB,
-Too few fields
+Error: missing year
+Record: Who's Who In Animated Cartoons: An International Guide to Film and Television's Award-Winning and Legendary Animators,Jeff Lenburg,15.95,155783671X,CCB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Amos, Tori - Images & Insights (Rare Photo Collection And Quotations)",Michael Friel & Melody Mcdaniel & Cindy Palmano & Rankin,1,0825615674,MRB,
-Too few fields
+Error: missing year
+Record: "Amos, Tori - Images & Insights (Rare Photo Collection And Quotations)",Michael Friel & Melody Mcdaniel & Cindy Palmano & Rankin,1,0825615674,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Atkins, Chet - Me And My Guitars",Chet Atkins & Michael Cochran,19.95,0634055658,MRB,
-Too few fields
+Error: missing year
+Record: "Atkins, Chet - Me And My Guitars",Chet Atkins & Michael Cochran,19.95,0634055658,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Bacharach, Burt - Song By Song",Serene Dominic,11.95,0825672805,MRB,
-Too few fields
+Error: missing year
+Record: "Bacharach, Burt - Song By Song",Serene Dominic,11.95,0825672805,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Bay City Rollers - Bye Bye Baby: My Tragic Love Affair With The Bay City Rollers,Caroline Sullivan,2.95,1582340552,MRB,
-Too few fields
+Error: missing year
+Record: Bay City Rollers - Bye Bye Baby: My Tragic Love Affair With The Bay City Rollers,Caroline Sullivan,2.95,1582340552,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Beastie Boys - The Beastie Boys Companion - Two Decades of Commentary,John Rocco,1,0028653343,MRB,
-Too few fields
+Error: missing year
+Record: Beastie Boys - The Beastie Boys Companion - Two Decades of Commentary,John Rocco,1,0028653343,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Beatles - Diary: An Intimate Day By Day History (Pocket Edition),Barry Miles,8.95,0711991960,MRB,
-Too few fields
+Error: missing year
+Record: Beatles - Diary: An Intimate Day By Day History (Pocket Edition),Barry Miles,8.95,0711991960,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Beatles - Dream Is Over,By Keith Badman,3.95,0711988021,MRB,
-Too few fields
+Error: missing year
+Record: Beatles - Dream Is Over,By Keith Badman,3.95,0711988021,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Billboard's Top R&B And Hip-Hop Singles (1942 To 2004),,39.95,0898201608,MRB,
-Too few fields
+Error: missing authors
+Record: Billboard's Top R&B And Hip-Hop Singles (1942 To 2004),,39.95,0898201608,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Black Sabbath - The Ozzy Years (Embossed Cover And Rare Photo Collection),Robert V. Conte & C.J. Henderson,1.99,1890313998,MRB,
-Too few fields
+Error: missing year
+Record: Billboard's Top R&B And Hip-Hop Singles (1942 To 2004),,39.95,0898201608,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Blues - From Robert Johnson To Robert Clay,Tony Russell,5.95,0028648862,MRB,
-Too few fields
+Error: missing year
+Record: Black Sabbath - The Ozzy Years (Embossed Cover And Rare Photo Collection),Robert V. Conte & C.J. Henderson,1.99,1890313998,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Boone, Pat - April Love: The Early Days of Rock 'N' Roll - The Authorized Biography",Paul Davis,4.95,,MRB,
-Too few fields
+Error: missing year
+Record: Blues - From Robert Johnson To Robert Clay,Tony Russell,5.95,0028648862,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-British Invasion - How The Beatles And Other UK Bands Conquered America,Bill Harry,6.95,,MRB,
-Too few fields
+Error: missing isbn
+Record: "Boone, Pat - April Love: The Early Days of Rock 'N' Roll - The Authorized Biography",Paul Davis,4.95,,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Brown, Ruth - Miss Rhythm: The Autobiography of Ruth Brown, Rhythm & Blues Legend",Ruth Brown & Andrew Yule,9.95,0306808889,MRB,
-Too few fields
+Error: missing year
+Record: "Boone, Pat - April Love: The Early Days of Rock 'N' Roll - The Authorized Biography",Paul Davis,4.95,,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Buffet, Jimmy - Jimmy Buffet Scrapbook",Mark Humphrey & Harris Lewine,3.95,0806514612,MRB,
-Too few fields
+Error: missing isbn
+Record: British Invasion - How The Beatles And Other UK Bands Conquered America,Bill Harry,6.95,,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Carmichael, Hoagy - Stardust Melody: The Life And Music of Hoagy Carmichael",Richard M. Sudhalter,5.95,0195168984,MRB,
-Too few fields
+Error: missing year
+Record: British Invasion - How The Beatles And Other UK Bands Conquered America,Bill Harry,6.95,,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Cash, Johnny - Man In White: A Novel About The Apostle Paul",Johnny Cash,19.95,159554237X,MRB,
-Too few fields
+Error: missing year
+Record: "Brown, Ruth - Miss Rhythm: The Autobiography of Ruth Brown, Rhythm & Blues Legend",Ruth Brown & Andrew Yule,9.95,0306808889,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Cash, Johnny - Ring of Fire: Tribute (with Quotes From Johnny's Family, Friends And Colleagues And A Bonus CD Single)",Brian Mansfield,3.95,1401601375,MRB,
-Too few fields
+Error: missing year
+Record: "Buffet, Jimmy - Jimmy Buffet Scrapbook",Mark Humphrey & Harris Lewine,3.95,0806514612,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Cash, Johnny - The Life of An American Icon",Stephen Miller,15.95,0711996261,MRB,
-Too few fields
+Error: missing year
+Record: "Carmichael, Hoagy - Stardust Melody: The Life And Music of Hoagy Carmichael",Richard M. Sudhalter,5.95,0195168984,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Cher - The First Time,Cher as told to Jeff Coplon,4.95,0316848441,MRB,
-Too few fields
+Error: missing year
+Record: "Cash, Johnny - Man In White: A Novel About The Apostle Paul",Johnny Cash,19.95,159554237X,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Chicago - Feelin' Stronger Every Day,Ben Joseph,1.99,1550822454,MRB,
-Too few fields
+Error: missing year
+Record: "Cash, Johnny - Ring of Fire: Tribute (with Quotes From Johnny's Family, Friends And Colleagues And A Bonus CD Single)",Brian Mansfield,3.95,1401601375,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Chieftains - Authorized Biography,John Glatt,5.95,0306809222,MRB,
-Too few fields
+Error: missing year
+Record: "Cash, Johnny - The Life of An American Icon",Stephen Miller,15.95,0711996261,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Cole, Natalie - Angel On My Shoulder: An Autobiography",Natalie Cole & Digby Diehl,4.95,0446527467,MRB,
-Too few fields
+Error: missing year
+Record: Cher - The First Time,Cher as told to Jeff Coplon,4.95,0316848441,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Complete Book of Doo Wop,Dr. Anthony J. Gribin & Dr. Matthew M. Schiff,24.95,0977379841,MRB,
-Too few fields
+Error: missing year
+Record: Chicago - Feelin' Stronger Every Day,Ben Joseph,1.99,1550822454,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Cranberries,Michael Heatley,1,1578990203,MRB,
-Too few fields
+Error: missing year
+Record: Chieftains - Authorized Biography,John Glatt,5.95,0306809222,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Darin, Bobby - Me And Bobby D.: A Memoir",Steve Karmen,16.95,0634048767,MRB,
-Too few fields
+Error: missing year
+Record: "Cole, Natalie - Angel On My Shoulder: An Autobiography",Natalie Cole & Digby Diehl,4.95,0446527467,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Davies, Ray - X-Ray",Ray Davies,5.95,0879516119,MRB,
-Too few fields
+Error: missing year
+Record: Complete Book of Doo Wop,Dr. Anthony J. Gribin & Dr. Matthew M. Schiff,24.95,0977379841,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-Deep Purple - The Deep Purple Story: Smoke On The Water,Dave Thompson,12.95,,MRB,
-Too few fields
+Error: missing year
+Record: Cranberries,Michael Heatley,1,1578990203,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Dion, Celine - Falling Into You",Barry Grills,1.49,155082189X,MRB,
-Too few fields
+Error: missing year
+Record: "Darin, Bobby - Me And Bobby D.: A Memoir",Steve Karmen,16.95,0634048767,MRB,
 
-Syntax error in file: books2010.csv.txt
+syntax error in file: books2010.csv.txt
 ====================
-"Dylan, Bob - Performing Artist, Volume 2 - The Midd
+Error: missing year
+Record: "Davies, Ray - X-Ray",Ray Davies,5.95,0879516119,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Deep Purple - The Deep Purple Story: Smoke On The Water,Dave Thompson,12.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Deep Purple - The Deep Purple Story: Smoke On The Water,Dave Thompson,12.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Dion, Celine - Falling Into You",Barry Grills,1.49,155082189X,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Dylan, Bob - Performing Artist, Volume 2 - The Middle Years: 1974-1986",Paul Williams,1.99,0711935556,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Dylan, Bob - Performing Artist, Volume 3 - Mind Out of Time: 1986-1990 & Beyond",Paul Williams,15.98,1844492818,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Freed, Alan Story - The Early Years of Rock & Roll",John A. Jackson,6.95,0977379809,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Garage Rock And Its Roots - Musical Rebels And The Drive For Individuality,Eric James Abbey & Michelangelo Capua,28.95,0786425644,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Gillespie, Dizzy - Groovin' High: The Life of Dizzy Gillespie",Alyn Shipton,6.95,0195144104,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Girl Groups: Fabulous Females That Rocked The World,John Clemente,7.95,0873418166,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Grateful Dead - Living With The Dead: Twenty Years On The Bus With Garcia And The Grateful Dead,Rock Scully & David Dalton,3.95,0316777129,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Grateful Dead - Not Fade Away: The Online World Remembers Jerry Garcia,,1.95,1560251255,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Grateful Dead - Not Fade Away: The Online World Remembers Jerry Garcia,,1.95,1560251255,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Great Rock Drummers of the Sixties (Revised),Bob Cianci,16.95,0634099256,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Hampton, Lionel - Hamp",Lionel Hampton & James Haskins,4.99,1567430198,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Hendrix, Jimi - Voodoo Child: The Illustrated Legend of Jimi Hendrix (with CD)",Illustrated By Bill Sienkiewicz & Created & Produed By Martin I. Green,8.95,0670867896,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Hot Country Stars,Michael McCall & Janet Williams,1.99,1561737291,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Jones, George - Why Baby Why",Jim Brown,1.99,1550822438,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Madonna - Complete Guide To Her Music,Rikky Rooksby,2.95,0711998833,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Madonna - In Her Own Words,Mick St Michael,5.95,0711977348,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Mamas & The Papas - California Dreamin',Doug Hall,1.99,1880522160,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Manilow, Barry - Biography",Patricia Butler,3.95,0711991979,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Marley, Bob - Complete Guide To His Music",Ian Mccann & Harry Hawke,2.95,0711998841,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "McCartney, Paul - I Saw Him Standing There",Jorie B. Gracen,12.95,0823083691,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "McCartney, Paul - Now & Then",Tony Barrow & Robin Bextor,19.95,0634069195,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monkees - Collectibles Price Guide,Marty Eck,13.95,0930625188,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: "Music Hound - Soundtracks: The Essential Album Guide To Film, Television, And Stage Music",Didieer C. Deutsh,4.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Music Hound - Soundtracks: The Essential Album Guide To Film, Television, And Stage Music",Didieer C. Deutsh,4.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Music, Money, And Success - The Insider's Guide To Making Money In The Music Industry (3rd Ed.)",Todd Brabec & Jeffrey Brabec,2.5,0825672821,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Nirvana - Complete Guide To Their Music,James Hector,2.95,0711998876,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Nirvana And The Grunge Revolution - Interviews (Also Pearl Jam, Alice In Chains, Soundgarden)",Guitar World Magazine,10.95,079359006X,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Nirvana Tribute - Nirvana / Hole,,1,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Nirvana Tribute - Nirvana / Hole,,1,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Nirvana Tribute - Nirvana / Hole,,1,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Pink Floyd - Interviews,Guitar World Magazine,9.95,0634032860,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Pop, Iggy - Neighbourhood Threat: On Tour With Iggy Pop",Alvin Gibbs,4.95,1899598170,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Presley, Elvis - Elvis Film Encyclopedia: An Impartial Guide To The Films of Elvis",Eric Braun,6.99,0879518146,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Presley, Elvis - Elvis Inc.: The Fall And Rise of The Presley Empire",Sean O'Neal,2.95,076151127X,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Presley, Elvis - Sergeant Presley: Our Untold Story of Elvis' Missing Years",Rex & Elisabeth Mansfield & Marshall & Zoe Terrill,5.95,1550225553,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Queen - The Art of Queen - The Making of The Eye,,1.99,0765191261,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Queen - The Art of Queen - The Making of The Eye,,1.99,0765191261,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: R.E.M. - The Rolling Stone Files,,2.95,0786880546,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: R.E.M. - The Rolling Stone Files,,2.95,0786880546,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Radiohead - Green Plastic Wateringcan,William Stone,1,188689454X,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Redding, Otis - Otis!: Otis Redding Story",Scott Freeman,5.95,0312302975,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Rich, Buddy - Traps: The Drum Wonder - The Life of Buddy Rich",Mel Torme,10.5,1888408022,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Rock 'N' Roll Years 1960-2000 - The Photographer's Cut,,2.99,0953747913,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Rock 'N' Roll Years 1960-2000 - The Photographer's Cut,,2.99,0953747913,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Sinatra, Frank - My Father's Daughter: A Memoir",Tina Sinatra (With Jeff Coplon),5.95,0684870762,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Sinatra, Frank - Sessions With Sinatra: Frank Sinatra And The Art of Recording",Charles Granata,13.95,1556523564,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Soulful Divas,David Nathan,11.5,0823084302,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Spector, Phil - Out of His Head",Richard Williams,4.95,0711998647,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Springsteen, Bruce - Talking: In His Own Words",John W. Duffy,8.95,1844494039,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Top 500 Heavy Metal Albums of All Time,Martin Popoff,14.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Top 500 Heavy Metal Albums of All Time,Martin Popoff,14.95,,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Turn On Your Mind - Four Decades of Great Psychedelic Rock,Jim Derogatis,12.95,0634055488,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: U2 - Complete Guide To Their Music,Bill Graham & Caroline Van Der Oosten De Boer,2.95,0711998868,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Vaughan, Stevie Ray - In His Own Words",Guitar World Magazine,10.5,0793580803,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Yes - Close To The Edge: The Story of Yes,Chris Welch,3.95,0711995095,MRB,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: "Brando, Marlon - A Biography",Patricia Bosworth,4.95,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Brando, Marlon - A Biography",Patricia Bosworth,4.95,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Brynner, Yul - A Biography",Michelangelo Capua,30.95,0786424613,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Ferrara, Abel - The King of New York",Nick Johnstone,2.95,071197652X,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Monster Bash Magazine (Issue #1),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Monster Bash Magazine (Issue #1),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monster Bash Magazine (Issue #1),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Monster Bash Magazine (Issue #2),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Monster Bash Magazine (Issue #2),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monster Bash Magazine (Issue #2),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Monster Bash Magazine (Issue #3),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Monster Bash Magazine (Issue #3),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monster Bash Magazine (Issue #3),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Monster Bash Magazine (Issue #4),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Monster Bash Magazine (Issue #4),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monster Bash Magazine (Issue #4),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing authors
+Record: Monster Bash Magazine (Issue #5),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: Monster Bash Magazine (Issue #5),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Monster Bash Magazine (Issue #5),,7,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Presley, Elvis - Elvis Cinema and Popular Culture",Douglas Brode,30.95,0786425261,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Raimi, Sam - Unseen Force: The Films of Sam Raimi",John Kenneth Muir,14.95,1557836078,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing isbn
+Record: "Robinson, Bill - Mr. Bojangles",Jim Haskins & N.R. Mitgang,7.95,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Robinson, Bill - Mr. Bojangles",Jim Haskins & N.R. Mitgang,7.95,,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Superman - Art of Superman Returns,Daniel Wallace,29.95,0811853446,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Tarantino, Quentin - The Cinema of Cool",Jeff Dawson,10.95,1557832277,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Tarzan - My Father,Johnny Weissmuller Jr. & William Reed & W. Craig Reed,19.95,1550225227,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Wizardry of Oz - The Artistry And Magic of The 1939 Mgm Classic (Revised & Expanded Edition),Jay Scarfone & William Stillman,13.95,1557836248,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: "Young, Alan - There's No Business Like Show Business... Was",Alan Young,12.95,1593930534,MTV,
+
+syntax error in file: books2010.csv.txt
+====================
+Error: missing year
+Record: Pop-Up Book of Nightmares,Gary Greenberg,4.95,031228263X,NEB,
+
