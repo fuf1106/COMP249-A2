@@ -18,14 +18,14 @@ public class Book implements Serializable {
      * Initializes all attributes to default values.
      */
     //is this constructor necessary? only valid books w 6 parameters will get passed... (no)
-    public Book() {
-        this.title = "None";
-        this.authors = "None";
-        this.price = 0;
-        this.isbn = "None";
-        this.genre = "None";
-        this.year = 0;
-    }
+//    public Book() {
+//        this.title = "None";
+//        this.authors = "None";
+//        this.price = 0;
+//        this.isbn = "None";
+//        this.genre = "None";
+//        this.year = 0;
+//    }
 
     /**
      * Parameterized constructor for the `Book` class.

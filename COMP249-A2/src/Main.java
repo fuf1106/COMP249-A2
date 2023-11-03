@@ -9,8 +9,6 @@ public class Main {
     public static void main(String[] args) {
         do_part1();
         do_part2();
-        Book test = new Book("g","g",10,"g", "h", 9);
-        System.out.println(test.toString());
     }
     public static void do_part1() {
         //declare scanner object outside the try block so that object persists
@@ -38,7 +36,7 @@ public class Main {
         //go through every line in the file and get the file name String from each line and print the file name to make sure it's correct
         for(int i = 0; i < fileCount; i++) {
             files[i] = in.nextLine();
-            System.out.println(files[i]);
+//            System.out.println(files[i]);
         }
 
         in.close(); //close the Scanner as soon as we are done
@@ -70,16 +68,13 @@ public class Main {
             //while loop for reading the lines of each input file
             while(in.hasNextLine()) {
                 String line = in.nextLine();
-                System.out.println(line); //Testing to check if code works
                 String[] fields = null;
                 String[] temp = null;
                 //Checks if line starts with " and splits accordingly
                 if (line.charAt(0) == '\"') {
                     String title_field = "\"" + line.substring(1, line.indexOf("\"", 1)) + "\""; //the first field
                     String other_fields = line.substring(title_field.length() + 1 );
-                    System.out.println(other_fields);
                     temp = other_fields.split(",", -1);
-                    System.out.println(temp.length);
                     fields = new String[6];
                     fields[0] = title_field;
 
@@ -109,10 +104,9 @@ public class Main {
                         fields[j + 1] = temp[j];
                     }
 
-                    for (int j = 0; j < fields.length; j++){
-                        System.out.println(fields[j]);
-                    }
-                    System.out.println("done");
+//                    for (int j = 0; j < fields.length; j++){
+//                        System.out.println(fields[j]);
+//                    }
                 }
 
                 else {
@@ -187,9 +181,6 @@ public class Main {
                 fieldNames[3] = "isbn";
                 fieldNames[4] = "genre";
                 fieldNames[5] = "year";
-                System.out.println(fields.length);
-                System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH" + fields[5]);
-
 
                 //had to close and open the outputstream again because reasons
                 outputWriter[8].close();
@@ -210,185 +201,233 @@ public class Main {
                     }
                     catch (MissingFieldException e){
                         outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
-                        System.out.println(e.getMessage());
+//                        System.out.println(e.getMessage());
                     }
                 }
             }
         }
-        System.out.println("\n====================\n");
+//        System.out.println("\n====================\n");
         //display the number of books in each CSV file then close outputWriter when done using it (this might need to be moved up at some point)
         for (int i = 0; i < genreSER.length; i++){
-            System.out.println("There are " + bookCount[i] + " books in the file " + genreCSV[i]);
+//            System.out.println("There are " + bookCount[i] + " books in the file " + genreCSV[i]);
             outputWriter[i].close();
         }
-
-        //TODO: Part 1
-        //Finish up syntax error file output. Ask teacher which should be prioritized first with regards to error output
     }
 
+    //note to self, you should count every line in each file and make sure each one is accounted for
+
     public static void do_part2(){
-
         //this is not writing errors to the semantic error file and i've given up trying to fix it, just does not work
+        String[] genre_file_names = {"Cartoon_Comics.csv", "Hobbies_Collectibles.csv", "Movies_TV_Books.csv", "Music_Radio_Books.csv", "Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv", "Sports_Books_Memorabilia.csv", "Trains_Planes_Automobiles.csv"};
 
-        Scanner in = null;
-        String part2FilePath = "COMP249-A2/src/part2_output_files/";
-        File files = new File(part2FilePath);
+        String inputFilepath = "COMP249-A2/src/part1_output_files/";
+        String outputFilepath = "COMP249-A2/src/part2_output_files/";
+
+        File[] output_files = new File[genre_file_names.length];
+        FileOutputStream[] output_streams = new FileOutputStream[genre_file_names.length];
+        PrintWriter[] printwriters = new PrintWriter[genre_file_names.length];
+
+        File[] input_files = new File[genre_file_names.length];
+        FileInputStream[] input_streams = new FileInputStream[genre_file_names.length];
+        BufferedReader[] bufferedReaders = new BufferedReader[genre_file_names.length];
 
         //wrap scanner object declaration in a try block to catch FileNotFound exceptions
         try {
-            in = new Scanner(files);
+            //For every file
+            for (int i = 0; i < genre_file_names.length; i++){
+                output_files[i] = new File(outputFilepath + genre_file_names[i]);
+                output_streams[i] = new FileOutputStream(output_files[i]);
+                printwriters[i] = new PrintWriter(output_streams[i]);
+
+                input_files[i] = new File(inputFilepath + genre_file_names[i]);
+                input_streams[i] = new FileInputStream(input_files[i]);
+                bufferedReaders[i] = new BufferedReader(new FileReader(inputFilepath + genre_file_names[i]));
+
+                Book[] books = new Book[bookCount[i]];
+                String[] fields;
+
+                // For every line
+                while (bufferedReaders[i].readLine() != null){
+                    String[] temp = null;
+                    String line = bufferedReaders[i].readLine();
+
+                    //Checks if line starts with " and splits accordingly
+                    if (line.charAt(0) == '\"') {
+                        String title_field = "\"" + line.substring(1, line.indexOf("\"", 1)) + "\""; //the first field
+                        String other_fields = line.substring(title_field.length() + 1 );
+                        temp = other_fields.split(",", -1);
+                        fields = new String[6];
+                        fields[0] = title_field;
+
+                        //sort each field into fields
+                        for (int j = 0; j < temp.length; j++){
+                            fields[j + 1] = temp[j];
+                        }
+                    }
+
+                    else {
+                        fields = line.split(",", -1);
+                    }
+
+                    books[i] = new Book(fields[0], fields[1], Double.parseDouble(fields[2]), fields[3], fields[4], Integer.parseInt(fields[5]));
+                }
+                // ToDo:
+                //check each parameter
+                // if valid, serialize and send
+
+
+
+
+            }
         }
+//        catch (BadPriceException f| BadIsbn10Exception f| BadIsbn13Exception f| BadYearException f) {
+////                        semErrorWriter[9].println(e.getMessage());
+                   // }
         catch(FileNotFoundException e) {
             System.out.println(e.getMessage());
             System.out.println("Problem opening file.");
             System.exit(0);
         }
-
-        //read the first int to know the number of files
-        int fileCount = in.nextInt();
-        in.nextLine(); //move the Scanner to the next line of the file otherwise the first entry will be blank
-        String[] file2 = new String[fileCount]; //declare the array size to match the file count size
-
-        //go through every line in the file and get the file name String from each line and print the file name to make sure it's correct
-        for(int i = 0; i < fileCount; i++) {
-            file2[i] = in.nextLine();
-            System.out.println(file2[i]);
-        }
-
-        in.close(); //close the Scanner as soon as we are done
-
-        //object declaration for inputting/outputting 2 files in part 2
-        ObjectOutputStream binaryOut;
-        BufferedReader textIn;
-        String file;
-
-        PrintWriter[] semErrorWriter = new PrintWriter[genreCSV.length];
-        try {
-            semErrorWriter = new PrintWriter[]{new PrintWriter(new FileOutputStream("COMP249-A2/src/part2_output_files/" + genreCSV[genreCSV.length - 1]))};
-        }
-        catch(FileNotFoundException e) {
+        catch (IOException e){
             System.out.println(e.getMessage());
+            System.exit(0);
         }
 
-        for(int i = 0; i < genreSER.length; i++) {
-            //try to open the input and output files
-            try {
-                file ="COMP249-A2/src/part2_output_files/" + genreCSV[i];
-                textIn = new BufferedReader(new FileReader(file));
-                binaryOut = new ObjectOutputStream(new FileOutputStream(genreSER[i]));
-            }
-            catch (FileNotFoundException e) {
-                System.out.println(e.getMessage());
-                continue;
-            }
-            catch (IOException e) {
-                System.out.println(e.getMessage());
-                continue;
-            }
-            String text;
-            Book[] books = new Book[bookCount[i]];
-            int finalBookCount = 0;
-            try {
-                while ((text = textIn.readLine()) != null) {
-                    String line = textIn.readLine();
-                    String[] fields = null;
-                    //Checks if line starts with " and splits accordingly
-                    if(text.charAt(0) == '\"') {
-                        String s = text.substring(1, text.indexOf("\"", 1)); //the first field
-                        String[] s2 = text.substring((text.indexOf("\"", 1))).split(","); //the other fields
-                        fields = new String[s2.length];
-                        fields[0] = s;
 
-                        //sort each field from s2 into fields
-                        for (int j = 1; j < s2.length; j++) {
-                            fields[j] = s2[j - 1];
-                        }
-                    }
-                    else {
-                        //split the line normally if it does not start with "
-                        fields = text.split(",");
-                    }
-
-                    //check for semantic errors:
-                    //check for price error
-
-                    try {
-                        if (fields.length > 2 && isNumeric(fields[2])) {
-                            double price = Double.parseDouble(fields[2]);
-                            if (price < 0) {
-                                throw new BadPriceException("semantic error in file: " + file2[i] + "\n====================\nError: bad year\nRecord: " + line + "\n");
-                            }
-                        }
-
-                        int sum = 0;
-                        //check for isbn error
-                        if (fields[3].length() == 10) {
-                            for (int j = 0; j < 10; j++) {
-                                sum += ((int) fields[3].charAt(j)) * (10 - j);
-                            }
-                            if (sum % 11 != 0) {
-                                throw new BadIsbn10Exception("semantic error in file: " + file2[i] + "\n====================\nError: bad ISBN-10\nRecord: " + line + "\n");
-                            }
-                        }
-                        else if (fields[3].length() == 13){
-                            for (int j = 0; j < 13; j++) {
-                                if (j % 2 != 0) {
-                                    sum += (3 * ((int) fields[3].charAt(j)));
-                                }
-                                else {
-                                    sum += ((int) fields[3].charAt(j));
-                                }
-                            }
-                            if (sum % 10 != 0) {
-                                throw new BadIsbn13Exception("semantic error in file: " + file2[i] + "\n====================\nError: bad ISBN-13\nRecord: " + line + "\n");
-                            }
-                        }
-                        //check for year error
-                        if (fields.length > 5 && isNumeric(fields[5])) {
-                            int year = Integer.parseInt(fields[5]);
-                            if (year < 1995 || year > 2010) {
-                                throw new BadYearException("semantic error in file: " + file2[i] + "\n====================\nError: bad year\nRecord: " + line + "\n");
-                            }
-                        }
-                    }
-
-                    catch (BadPriceException | BadIsbn10Exception | BadIsbn13Exception | BadYearException e) {
-                        semErrorWriter[9].println(e.getMessage());
-                    }
-
-                    //add valid book to book array
-                    if (fields.length > 2 && isNumeric(fields[2])) {
-                        books[finalBookCount] = new Book(fields[0], fields[1], Double.parseDouble(fields[2]), fields[3], fields[4], Integer.parseInt(fields[5]));
-                    }
-                    //increment counter tracking the final official book count for each book type
-                    finalBookCount++;
-                }
-
-                //copy the book array into a correctly sized array for the final set of books
-                Book[] finalList = new Book[finalBookCount];
-                for (int j = 0; j < finalBookCount; j++) {
-                    finalList[j] = books[j];
-                }
-
-                //copy the array of books into the binary file
-                binaryOut.writeObject(finalList);
-                binaryOut.close();
-
-                //update book count record with the final count of books of each genre
-                bookCount[i] = finalBookCount;
-
-            }
-            catch (IOException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-    }
-    public static boolean isNumeric(String str) {
-        try {
-            Double.parseDouble(str);
-            return true;
-        } catch (NumberFormatException e) {
-            return false;
-        }
+//        in.close(); //close the Scanner as soon as we are done
+//
+//        //object declaration for inputting/outputting 2 files in part 2
+//        ObjectOutputStream binaryOut;
+//        BufferedReader textIn;
+//        String file;
+//
+//        PrintWriter[] semErrorWriter = new PrintWriter[genreCSV.length];
+//        try {
+//            semErrorWriter = new PrintWriter[]{new PrintWriter(new FileOutputStream("COMP249-A2/src/part2_output_files/" + genreCSV[genreCSV.length - 1]))};
+//        }
+//        catch(FileNotFoundException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        for(int i = 0; i < genreSER.length; i++) {
+//            //try to open the input and output files
+//            try {
+//                file ="COMP249-A2/src/part2_output_files/" + genreCSV[i];
+//                textIn = new BufferedReader(new FileReader(file));
+//                binaryOut = new ObjectOutputStream(new FileOutputStream(genreSER[i]));
+//            }
+//            catch (FileNotFoundException e) {
+//                System.out.println(e.getMessage());
+//                continue;
+//            }
+//            catch (IOException e) {
+//                System.out.println(e.getMessage());
+//                continue;
+//            }
+//            String text;
+//            Book[] books = new Book[bookCount[i]];
+//            int finalBookCount = 0;
+//            try {
+//                while ((text = textIn.readLine()) != null) {
+//                    String line = textIn.readLine();
+////                    String[] fields = null;
+//                    //Checks if line starts with " and splits accordingly
+//                    if(text.charAt(0) == '\"') {
+//                        String s = text.substring(1, text.indexOf("\"", 1)); //the first field
+//                        String[] s2 = text.substring((text.indexOf("\"", 1))).split(","); //the other fields
+//                        fields = new String[s2.length];
+//                        fields[0] = s;
+//
+//                        //sort each field from s2 into fields
+//                        for (int j = 1; j < s2.length; j++) {
+//                            fields[j] = s2[j - 1];
+//                        }
+//                    }
+//                    else {
+//                        //split the line normally if it does not start with "
+//                        fields = text.split(",");
+//                    }
+//
+//                    //check for semantic errors:
+//                    //check for price error
+//
+//                    try {
+//                        if (fields.length > 2 && isNumeric(fields[2])) {
+//                            double price = Double.parseDouble(fields[2]);
+//                            if (price < 0) {
+//                                throw new BadPriceException("semantic error in file: " + file2[i] + "\n====================\nError: bad year\nRecord: " + line + "\n");
+//                            }
+//                        }
+//
+//                        int sum = 0;
+//                        //check for isbn error
+//                        if (fields[3].length() == 10) {
+//                            for (int j = 0; j < 10; j++) {
+//                                sum += ((int) fields[3].charAt(j)) * (10 - j);
+//                            }
+//                            if (sum % 11 != 0) {
+//                                throw new BadIsbn10Exception("semantic error in file: " + file2[i] + "\n====================\nError: bad ISBN-10\nRecord: " + line + "\n");
+//                            }
+//                        }
+//                        else if (fields[3].length() == 13){
+//                            for (int j = 0; j < 13; j++) {
+//                                if (j % 2 != 0) {
+//                                    sum += (3 * ((int) fields[3].charAt(j)));
+//                                }
+//                                else {
+//                                    sum += ((int) fields[3].charAt(j));
+//                                }
+//                            }
+//                            if (sum % 10 != 0) {
+//                                throw new BadIsbn13Exception("semantic error in file: " + file2[i] + "\n====================\nError: bad ISBN-13\nRecord: " + line + "\n");
+//                            }
+//                        }
+//                        //check for year error
+//                        if (fields.length > 5 && isNumeric(fields[5])) {
+//                            int year = Integer.parseInt(fields[5]);
+//                            if (year < 1995 || year > 2010) {
+//                                throw new BadYearException("semantic error in file: " + file2[i] + "\n====================\nError: bad year\nRecord: " + line + "\n");
+//                            }
+//                        }
+//                    }
+//
+////                    catch (BadPriceException | BadIsbn10Exception | BadIsbn13Exception | BadYearException e) {
+////                       semErrorWriter[9].println(e.getMessage());
+////                    }
+//
+//                    //add valid book to book array
+//                    if (fields.length > 2 && isNumeric(fields[2])) {
+//                        books[finalBookCount] = new Book(fields[0], fields[1], Double.parseDouble(fields[2]), fields[3], fields[4], Integer.parseInt(fields[5]));
+//                    }
+//                    //increment counter tracking the final official book count for each book type
+//                    finalBookCount++;
+//                }
+//
+//                //copy the book array into a correctly sized array for the final set of books
+//                Book[] finalList = new Book[finalBookCount];
+//                for (int j = 0; j < finalBookCount; j++) {
+//                    finalList[j] = books[j];
+//                }
+//
+//                //copy the array of books into the binary file
+//                binaryOut.writeObject(finalList);
+//                binaryOut.close();
+//
+//                //update book count record with the final count of books of each genre
+//                bookCount[i] = finalBookCount;
+//
+//            }
+//            catch (IOException e) {
+//                System.out.println(e.getMessage());
+//            }
+//        }
+//    }
+//    public static boolean isNumeric(String str) {
+//        try {
+//            Double.parseDouble(str);
+//            return true;
+//        } catch (NumberFormatException e) {
+//            return false;
+//        }
     }
 }
