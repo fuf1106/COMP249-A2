@@ -132,6 +132,15 @@ public class Main {
                 fieldNames[4] = "genre";
                 fieldNames[5] = "year";
 
+                //had to close and open the outputstream again because reasons
+                outputWriter[8].close();
+
+                try {
+                    outputWriter[8] = new PrintWriter(new FileOutputStream("COMP249-A2/src/part1_output_files/" + genreCSV[8], true));
+                } catch (FileNotFoundException e) {
+                    System.out.println(e.getMessage());
+                }
+
                 //checks for missing fields
                 try {
                     for (int j = 0; j < fields.length; j++) {
@@ -185,9 +194,10 @@ public class Main {
                 } catch (FileNotFoundException e) {
                     System.out.println(e.getMessage());
                 }
+
             }
         }
-        //close outputWriter for each file when done using it (this might need to be moved up at some point)
+        //close outputWriter for each file when done using it
         for (int i = 0; i < genreSER.length; i++) {
             outputWriter[i].close();
         }
@@ -303,12 +313,12 @@ public class Main {
                     }
                     books[finalBookCount[i]++] = new Book(fields[0], fields[1], Double.parseDouble(fields[2]), fields[3], fields[4], Integer.parseInt(fields[5]));
                 }
-                Book[] finalBook = new Book[finalBookCount[i]];
+                Book[] finalBooks = new Book[finalBookCount[i]];
                 for (int j = 0; j < finalBookCount[i]; j++) {
-                    finalBook[j] = books[j];
+                    finalBooks[j] = books[j];
                 }
                 output[i] = new ObjectOutputStream(new FileOutputStream(outputFilepath + genreSER[i]));
-                output[i].writeObject(finalBook);
+                output[i].writeObject(finalBooks);
                 output[i].close();
             }
             semErrorWriter.close();
@@ -330,7 +340,7 @@ public class Main {
 
         for (int i = 0; i < genreSER.length; i++) { //deserialization process
             try {
-                input[i] = new ObjectInputStream(new FileInputStream("COMP249-A2/part2_output_files/" + genreSER[i]));
+                input[i] = new ObjectInputStream(new FileInputStream( "COMP249-A2/src/part2_output_files/" + genreSER[i]));
                 bookArrays[i] = (Book[]) input[i].readObject();
                 input[i].close();
             }
@@ -352,26 +362,82 @@ public class Main {
             System.out.println("-------------------------------------");
             System.out.println("Main Menu");
             System.out.println("-------------------------------------");
-            System.out.println("V: View the selected file: " + genreSER[currentIndex]);
+            System.out.println("V: View the selected file: " + genreSER[currentIndex] + " (" + bookArrays[currentIndex].length + " records)");
             System.out.println("S: Select a file to view");
             System.out.println("X: Exit");
             System.out.print("Enter your choice -> ");
             String choice = in.next();
             if (choice.equalsIgnoreCase("v")) {
-                viewBooks(in, bookArrays[currentIndex], currentIndex);
+                viewBooks(in, bookArrays[currentIndex]);
             }
             else if (choice.equalsIgnoreCase("s")) {
-                currentIndex = selectFile(in);
-                currentIndex = 0;
+                int temp = currentIndex;
+                currentIndex = selectFile(in, genreSER, bookArrays);
+                if (currentIndex == 9){
+                    currentIndex = temp;
+                }
             }
             else if (choice.equalsIgnoreCase("x")) {
                 break;
             }
         }
 
+        System.exit(0);
+
     }
 
-    public static void viewBooks(Scanner in, Book[] books, int currentIndex) { //for option v
+    public static void viewBooks(Scanner in, Book[] books) { //for option v
+        System.out.println("Enter your choice: ");
+        int n = in.nextInt(); //check for int? if so, make a method for check int
+        int index = 0;
+
+
+            while (index > 0 || index < books.length){
+                if (n > 0){
+                    for(int i = 0; i < n; i++){
+                        if (index + i >= books.length){
+                            System.out.println("EOF has been reached");
+                            index = books.length;
+                            break;
+                        }
+                        else if (index < 0){
+                            index = 0;
+                            break;
+                        }
+                        System.out.println(books[index + i]);
+                    }
+                    if (index < books.length){
+                        index += (n - 1);
+                    }
+                    System.out.println();
+                    System.out.println("Enter your choice: ");
+                    n = in.nextInt();
+
+                }
+                else if (n < 0 ){
+                    for(int i = 0; i > n; i--){
+                        if (index <= 1){
+                            System.out.println("BOF has been reached");
+                            index = 0;
+                            break;
+                        }
+                        System.out.println(books[index + (i - 1)]);
+                    }
+                    index += (n + 1);
+
+                    if (index < 0){
+                        index = 0;
+                    }
+                    System.out.println("Enter your choice: ");
+                    n = in.nextInt();
+                }
+                else {
+                    break;
+                }
+
+            }
+
+
 
     }
 
@@ -379,8 +445,13 @@ public class Main {
 
     }
 
-    public static int selectFile(Scanner in) { //for option s
-        return 0;
+    public static int selectFile(Scanner number, String[] fileNames, Book[][] bookArrays) { //for option s
+        for(int i = 0; i < genreSER.length; i++){
+            System.out.println(" " + (i + 1) + " " + fileNames[i] + " (" + bookArrays[i].length + " records)");
+        }
+        System.out.println(" 9 Exit");
+        System.out.print("Enter your choice: ");
+        return number.nextInt(); //do we need to verify int?
     }
 
 

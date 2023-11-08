@@ -160,13 +160,7 @@ public class Book implements Serializable {
      */
     @Override
     public String toString() {
-        return "Book infomration: \n" +
-                "title: " + title + "\n" +
-                "authors: " + authors + "\n" +
-                "price: " + price + "\n" +
-                "isbn: " + isbn + "\n" +
-                "genre: " + genre + "\n" +
-                "year: " + year;
+        return title + ", " + authors + ", " + price + ", " + isbn + ", " + genre + ", " + year;
     }
 
     /**
