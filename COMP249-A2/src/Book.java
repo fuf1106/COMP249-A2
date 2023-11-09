@@ -1,3 +1,15 @@
+/**
+ * Names(s) and ID's: Diana Edvi (40198139) AND Fuad Awad (40195634)
+ * COMP249
+ * Assignment # 2
+ * Due Date: November 11, 2023
+ */
+
+// -----------------------------------------------------
+// Assignment 2
+// Question: (Parts 2, and 3)
+// Written by: Diana Edvi (40198139) AND Fuad Awad (40195634)
+// -----------------------------------------------------
 
 /**
  * The `Book` class represents a Book Object with various attributes including title, authors, price, ISBN, genre, and publication year.
@@ -17,15 +29,6 @@ public class Book implements Serializable {
      * Default constructor for the `Book` class.
      * Initializes all attributes to default values.
      */
-    //is this constructor necessary? only valid books w 6 parameters will get passed... (no)
-//    public Book() {
-//        this.title = "None";
-//        this.authors = "None";
-//        this.price = 0;
-//        this.isbn = "None";
-//        this.genre = "None";
-//        this.year = 0;
-//    }
 
     /**
      * Parameterized constructor for the `Book` class.

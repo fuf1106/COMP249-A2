@@ -1,6 +1,27 @@
-import java.io.*;
-import java.util.Scanner;
+/**
+ * Names(s) and ID's: Diana Edvi (40198139) AND Fuad Awad (40195634)
+ * COMP249
+ * Assignment # 2
+ * Due Date: November 11, 2023
+ */
 
+// -----------------------------------------------------
+// Assignment 2
+// Question: (Parts 1, 2, and 3)
+// Written by: Diana Edvi (40198139) AND Fuad Awad (40195634)
+// This Java program is divided into three parts:
+    // Part 1 reads input files and categorizes book records into separate CSV files, checking for syntax errors.
+    // Part 2 validates book records for semantic errors and serializes valid records into binary files while creating a semantic error log.
+    // Part 3 offers a user interface for browsing the serialized book records, allowing users to select and view records from different genres.
+// -----------------------------------------------------
+
+import java.io.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+/**
+ * The Main class represents a Java program for processing and managing book records.
+ * It consists of three parts: part 1, part 2, and part 3, each with its own set of functions.
+ */
 public class Main {
     //declare String of file names for files used in multiple parts
     private static final String[] genreCSV = {"Cartoon_Comics.csv", "Hobbies_Collectibles.csv", "Movies_TV_Books.csv", "Music_Radio_Books.csv", "Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv", "Sports_Books_Memorabilia.csv", "Trains_Planes_Automobiles.csv", "syntax_error_file.txt", "semantic_error_file.txt"};
@@ -13,11 +34,15 @@ public class Main {
         do_part2();
         do_part3();
     }
-
+    /**
+     * This method reads a list of input file names from a file, processes each file,
+     * and categorizes book records into separate CSV files based on their genre.
+     * It checks for syntax errors in the records (number of fields, missing fields, and invalid genres)
+     * It also creates a syntax error file which logs any encountered errors.
+     */
     public static void do_part1() {
         //declare scanner object outside the try block so that object persists
         //declaring the file name in a String for simplicity's sake
-
         Scanner in = null;
         String part1F1 = "COMP249-A2/src/part1_input_file_names.txt";
         File file = new File(part1F1);
@@ -36,12 +61,12 @@ public class Main {
         in.nextLine(); //move the Scanner to the next line of the file otherwise the first entry will be blank
         String[] files = new String[fileCount]; //declare the array size to match the file count size
 
-        //go through every line in the file and get the file name String from each line and print the file name to make sure it's correct
+        //get the file name from each line
         for (int i = 0; i < fileCount; i++) {
             files[i] = in.nextLine();
         }
-
-        in.close(); //close the Scanner as soon as we are done
+        //close the Scanner
+        in.close();
 
         //open the list of output files
         PrintWriter[] outputWriter = new PrintWriter[genreCSV.length - 1];
@@ -51,6 +76,7 @@ public class Main {
             }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
+            System.exit(0);
         }
 
         //outer for loop used for processing all the books[year].csv files
@@ -97,10 +123,11 @@ public class Main {
                         }
                     }
 
-                    //sort each field into fields
+                    //sort each field into fields array
                     for (int j = 0; j < temp.length; j++) {
                         fields[j + 1] = temp[j];
                     }
+                    //splits string into fields array
                 } else {
                     fields = line.split(",", -1);
 
@@ -124,6 +151,7 @@ public class Main {
                     }
                 }
 
+                //initialize fieldNames array abd assign values to each index
                 String[] fieldNames = new String[6];
                 fieldNames[0] = "title";
                 fieldNames[1] = "authors";
@@ -132,13 +160,14 @@ public class Main {
                 fieldNames[4] = "genre";
                 fieldNames[5] = "year";
 
-                //had to close and open the outputstream again because reasons
+                //close and open the outputstream again because there were too many lines at once
                 outputWriter[8].close();
 
                 try {
                     outputWriter[8] = new PrintWriter(new FileOutputStream("COMP249-A2/src/part1_output_files/" + genreCSV[8], true));
                 } catch (FileNotFoundException e) {
                     System.out.println(e.getMessage());
+                    System.exit(0);
                 }
 
                 //checks for missing fields
@@ -151,11 +180,9 @@ public class Main {
                 } catch (MissingFieldException e) {
                     outputWriter[8].println(e.getMessage()); //send to syntax_error_file.txt
                     continue;
-                    //System.out.println(e.getMessage());
                 }
 
                 //Checks the genre of every line and outputs it to the appropriate file, then increments the bookCount for the appropriate CSV file by 1
-                //Checks for valid genre
                 String genre = fields[4];
                 if (genre.equals("CCB")) {
                     outputWriter[0].println(line);
@@ -186,13 +213,14 @@ public class Main {
                     outputWriter[8].println("Error: invalid genre \n====================\n" + line + "\n");
                 }
 
-                //had to close and open the outputstream again because reasons
+                //close and open the outputstream again because there were too many lines at once
                 outputWriter[8].close();
 
                 try {
                     outputWriter[8] = new PrintWriter(new FileOutputStream("COMP249-A2/src/part1_output_files/" + genreCSV[8], true));
                 } catch (FileNotFoundException e) {
                     System.out.println(e.getMessage());
+                    System.exit(0);
                 }
 
             }
@@ -203,24 +231,34 @@ public class Main {
         }
     }
 
-    //note to self, you should count every line in each file and make sure each one is accounted for
-
+    /**
+     * This method reads and processes CSV files containing book records.
+     * It checks for semantic errors in the records (price, ISBN-10, ISBN-13, and year)
+     * It then serializes the validated records into binary files.
+     * It also creates a semantic error file which logs any encountered errors.
+     */
     public static void do_part2() {
+        //Array of genre file names
         String[] genre_file_names = {"Cartoon_Comics.csv", "Hobbies_Collectibles.csv", "Movies_TV_Books.csv", "Music_Radio_Books.csv", "Nostalgia_Eclectic_Books.csv", "Old_Time_Radio_Books.csv", "Sports_Books_Memorabilia.csv", "Trains_Planes_Automobiles.csv"};
 
+        // Input and output file paths for reading and writing book records
         String inputFilepath = "COMP249-A2/src/part1_output_files/";
         String outputFilepath = "COMP249-A2/src/part2_output_files/";
 
+        // Array of PrintWriter objects for writing output files
         PrintWriter[] outputWriter = new PrintWriter[genreCSV.length];
         PrintWriter semErrorWriter = null;
 
+        // Arrays for handling input files
         File[] input_files = new File[genre_file_names.length];
         FileInputStream[] input_streams = new FileInputStream[genre_file_names.length];
         BufferedReader[] bufferedReaders = new BufferedReader[genre_file_names.length];
 
+        // Arrays for handling output files
         ObjectOutputStream[] output = new ObjectOutputStream[genre_file_names.length];
 
         try {
+            // Initialize a PrintWriter for writing semantic error logs
             semErrorWriter = new PrintWriter(new FileOutputStream("COMP249-A2/src/part2_output_files/semantic_error_file.txt"));
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
@@ -233,6 +271,7 @@ public class Main {
             for (int i = 0; i < genre_file_names.length; i++) {
                 finalBookCount[i] = 0;
 
+                // Open and prepare input files for reading
                 input_files[i] = new File(inputFilepath + genre_file_names[i]);
                 input_streams[i] = new FileInputStream(input_files[i]);
                 bufferedReaders[i] = new BufferedReader(new FileReader(inputFilepath + genre_file_names[i]));
@@ -242,11 +281,11 @@ public class Main {
 
                 String line = "";
 
-                // For every line
+                // Read and process each line in the input file
                 while ((line = bufferedReaders[i].readLine()) != null) {
                     String[] temp = null;
 
-                    //Checks if line starts with " and splits accordingly
+                    // Check if the line starts with a double quote (") and split accordingly
                     if (line.charAt(0) == '\"') {
                         String title_field = "\"" + line.substring(1, line.indexOf("\"", 1)) + "\""; //the first field
                         String other_fields = line.substring(title_field.length() + 1);
@@ -254,7 +293,7 @@ public class Main {
                         fields = new String[6];
                         fields[0] = title_field;
 
-                        //sort each field into fields
+                        //sort each field into fields array
                         for (int j = 0; j < temp.length; j++) {
                             fields[j + 1] = temp[j];
                         }
@@ -311,8 +350,10 @@ public class Main {
                         semErrorWriter.println(e.getMessage());
                         continue;
                     }
+                    // Create Book objects and store them in the array
                     books[finalBookCount[i]++] = new Book(fields[0], fields[1], Double.parseDouble(fields[2]), fields[3], fields[4], Integer.parseInt(fields[5]));
                 }
+                // Create an array of final Book objects and write it to an output file
                 Book[] finalBooks = new Book[finalBookCount[i]];
                 for (int j = 0; j < finalBookCount[i]; j++) {
                     finalBooks[j] = books[j];
@@ -321,6 +362,7 @@ public class Main {
                 output[i].writeObject(finalBooks);
                 output[i].close();
             }
+            // Close the semantic error log
             semErrorWriter.close();
 
         } catch (FileNotFoundException e) {
@@ -333,6 +375,10 @@ public class Main {
         }
     }
 
+    /**
+     * This method deserializes book records from files and
+     *provides a user interface to view and select files.
+     */
     public static void do_part3() {
         Scanner in = new Scanner(System.in);
         ObjectInputStream[] input = new ObjectInputStream[genreSER.length];
@@ -340,6 +386,7 @@ public class Main {
 
         for (int i = 0; i < genreSER.length; i++) { //deserialization process
             try {
+                // Open and deserialize each genre's data file
                 input[i] = new ObjectInputStream(new FileInputStream( "COMP249-A2/src/part2_output_files/" + genreSER[i]));
                 bookArrays[i] = (Book[]) input[i].readObject();
                 input[i].close();
@@ -368,91 +415,117 @@ public class Main {
             System.out.print("Enter your choice -> ");
             String choice = in.next();
             if (choice.equalsIgnoreCase("v")) {
+                // View books from the selected file
                 viewBooks(in, bookArrays[currentIndex]);
             }
             else if (choice.equalsIgnoreCase("s")) {
                 int temp = currentIndex;
+                // Select a different file to view
                 currentIndex = selectFile(in, genreSER, bookArrays);
                 if (currentIndex == 9){
                     currentIndex = temp;
                 }
             }
             else if (choice.equalsIgnoreCase("x")) {
+                // Exit the program
                 break;
             }
         }
-
+        System.out.println("Thank you for participating in this program");
         System.exit(0);
-
     }
 
+    /**
+     * Displays a list of books and prompts the user to navigate through the book records.
+     * Entering a positive integer n displays the current object as well as the following (n-1) objects
+     * Entering a negative integer n displays the current object as well as the previous (n-1) objects
+     *
+     * @param in     A Scanner object for reading user input.
+     * @param books  An array of Book objects representing the collection of books.
+     */
     public static void viewBooks(Scanner in, Book[] books) { //for option v
         System.out.println("Enter your choice: ");
-        int n = in.nextInt(); //check for int? if so, make a method for check int
+        int n = checkInt(in);
         int index = 0;
 
-
+        // Loop for displaying books based on user's input
             while (index > 0 || index < books.length){
                 if (n > 0){
                     for(int i = 0; i < n; i++){
                         if (index + i >= books.length){
                             System.out.println("EOF has been reached");
-                            index = books.length;
+                            index = books.length - 1;
                             break;
                         }
-                        else if (index < 0){
-                            index = 0;
-                            break;
-                        }
-                        System.out.println(books[index + i]);
+                        System.out.println(books[index + i]); // Display a book
                     }
-                    if (index < books.length){
-                        index += (n - 1);
+                    if (index < books.length - 1){
+                        index += (n - 1); // Move the index forward
                     }
                     System.out.println();
                     System.out.println("Enter your choice: ");
-                    n = in.nextInt();
-
+                    n = checkInt(in); // Read another integer
                 }
                 else if (n < 0 ){
-                    for(int i = 0; i > n; i--){
-                        if (index <= 1){
+                    index = index - (Math.abs(n) - 1); // Move the index backward
+                    for(int i = 0; i < Math.abs(n); i++){
+                        if (index < 0){
                             System.out.println("BOF has been reached");
                             index = 0;
                             break;
                         }
-                        System.out.println(books[index + (i - 1)]);
+                        System.out.println(books[index + i]); // Display a book
                     }
-                    index += (n + 1);
-
                     if (index < 0){
                         index = 0;
                     }
                     System.out.println("Enter your choice: ");
-                    n = in.nextInt();
+                    n = checkInt(in); // Read another integer
                 }
                 else {
-                    break;
+                    break; // Exit the loop if n is 0
                 }
-
             }
-
-
-
     }
 
-    public static void displayBook(Book book) { //submenu for option s
-
-    }
-
+    /**
+     * Displays a list of files and prompts the user to select a file.
+     *
+     * @param number      A Scanner object for reading user input.
+     * @param fileNames   An array of file names, each representing a collection of books based off of different genres.
+     * @param bookArrays  A two-dimensional array containing book records, organized by file.
+     * @return An integer representing the user's choice.
+     */
     public static int selectFile(Scanner number, String[] fileNames, Book[][] bookArrays) { //for option s
+        //display files
         for(int i = 0; i < genreSER.length; i++){
             System.out.println(" " + (i + 1) + " " + fileNames[i] + " (" + bookArrays[i].length + " records)");
         }
         System.out.println(" 9 Exit");
         System.out.print("Enter your choice: ");
-        return number.nextInt(); //do we need to verify int?
+        return checkInt(number); // Read and return the user's choice as an integer
     }
-
-
+    /**
+     * Reads an integer input from the provided Scanner object, handling potential input errors.
+     *
+     * This method prompts the user to enter an integer, and it repeatedly retries until a valid integer input
+     * is provided.
+     *
+     * @param scanner The Scanner object used for reading user input.
+     * @return The valid integer input provided by the user.
+     */
+    public static int checkInt(Scanner scanner){
+        int number = 0;
+        //keep looping until integer is input
+        while (true){
+            try {
+                number = scanner.nextInt();
+                return number;
+            }
+            catch (InputMismatchException e){
+                System.out.println("Please input an integer");
+                scanner.next(); // Clear invalid input from the scanner
+            }
+        }
+    }
 }
