@@ -444,8 +444,8 @@ public class Main {
      * @param books  An array of Book objects representing the collection of books.
      */
     public static void viewBooks(Scanner in, Book[] books) { //for option v
-        System.out.println("Enter a positive integer to view the number of subsequent books. " +
-                "Enter a negative integer to view the previous books: ");
+        System.out.println("Enter a positive integer to view the number of subsequent books.\n" +
+                "Enter a negative integer to view the previous books.\nEnter 0 to return to the menu: ");
         int n = checkInt(in);
         int index = 0;
 
@@ -464,8 +464,8 @@ public class Main {
                         index += (n - 1); // Move the index forward
                     }
                     System.out.println();
-                    System.out.println("Enter a positive integer to view the number of subsequent books. " +
-                            "Enter a negative integer to view the previous books: ");
+                    System.out.println("Enter a positive integer to view the number of subsequent books.\n" +
+                            "Enter a negative integer to view the previous books.\nEnter 0 to return to the menu: ");
                     n = checkInt(in); // Read another integer
                 }
                 else if (n < 0 ){
@@ -478,11 +478,12 @@ public class Main {
                         }
                         System.out.println(books[index + i]); // Display a book
                     }
+                    System.out.println();
                     if (index < 0){
                         index = 0;
                     }
-                    System.out.println("Enter a positive integer to view the number of subsequent books. " +
-                            "Enter a negative integer to view the previous books: ");
+                    System.out.println("Enter a positive integer to view the number of subsequent books.\n" +
+                            "Enter a negative integer to view the previous books.\nEnter 0 to return to the menu: ");
                     n = checkInt(in); // Read another integer
                 }
                 else {
