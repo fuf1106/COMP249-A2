@@ -35,7 +35,7 @@ public class Main {
         do_part3();
     }
     /**
-     * This method reads a list of input file names from a file, processes each file,
+     * This method reads a list of input file names from a file, processes each one,
      * and categorizes book records into separate CSV files based on their genre.
      * It checks for syntax errors in the records (number of fields, missing fields, and invalid genres)
      * It also creates a syntax error file which logs any encountered errors.
@@ -444,7 +444,8 @@ public class Main {
      * @param books  An array of Book objects representing the collection of books.
      */
     public static void viewBooks(Scanner in, Book[] books) { //for option v
-        System.out.println("Enter your choice: ");
+        System.out.println("Enter a positive integer to view the number of subsequent books. " +
+                "Enter a negative integer to view the previous books: ");
         int n = checkInt(in);
         int index = 0;
 
@@ -453,7 +454,7 @@ public class Main {
                 if (n > 0){
                     for(int i = 0; i < n; i++){
                         if (index + i >= books.length){
-                            System.out.println("EOF has been reached");
+                            System.out.println("End of file has been reached");
                             index = books.length - 1;
                             break;
                         }
@@ -463,14 +464,15 @@ public class Main {
                         index += (n - 1); // Move the index forward
                     }
                     System.out.println();
-                    System.out.println("Enter your choice: ");
+                    System.out.println("Enter a positive integer to view the number of subsequent books. " +
+                            "Enter a negative integer to view the previous books: ");
                     n = checkInt(in); // Read another integer
                 }
                 else if (n < 0 ){
                     index = index - (Math.abs(n) - 1); // Move the index backward
                     for(int i = 0; i < Math.abs(n); i++){
                         if (index < 0){
-                            System.out.println("BOF has been reached");
+                            System.out.println("Beginning of file has been reached");
                             index = 0;
                             break;
                         }
@@ -479,7 +481,8 @@ public class Main {
                     if (index < 0){
                         index = 0;
                     }
-                    System.out.println("Enter your choice: ");
+                    System.out.println("Enter a positive integer to view the number of subsequent books. " +
+                            "Enter a negative integer to view the previous books: ");
                     n = checkInt(in); // Read another integer
                 }
                 else {
